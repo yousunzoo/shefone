@@ -50,8 +50,129 @@
     position: relative;
     padding: 0 80px;
   }
+
+  .mainSecRow {
+    display: table;
+    width: 100%;
+  }
+  .mainSecRow-cell:first-child {
+    display: table-cell;
+    vertical-align: top;
+  }
+  .mainSecRow-cell:last-child {
+    display: table-cell;
+    vertical-align: bottom;
+    width: 1%;
+  }
+
+  .mainTitleHead-inner {
+    display: table;
+    width: 100%;
+  }
   img {
     max-width: 100%;
     height: auto;
+  }
+
+  .mainTitleHead-title {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 80px;
+    line-height: 1.2em;
+    color: #000;
+    font-weight: bold;
+    width: 1%;
+    white-space: nowrap;
+  }
+
+  .mainTitleHead-text {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 150px;
+    font-size: 24px;
+    line-height: 1.7em;
+    color: #000000;
+    font-weight: 500;
+  }
+
+  .mainHeader-btn {
+    width: calc(226px + 4px);
+    float: right;
+  }
+
+  .AnimeBtn {
+    display: block;
+    position: relative;
+  }
+  .AnimeBtn::before {
+    height: 0%;
+    content: "";
+    width: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: height 0.8s;
+  }
+  .AnimeBtn::after {
+    content: "";
+    width: 2px;
+    height: 0;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: height 0.8s;
+  }
+  .AnimeBtn-text {
+    font-size: 1.04166vw;
+    line-height: 1.2em;
+    color: #000;
+    font-weight: bold;
+    white-space: nowrap;
+    padding: calc(22px + 2px) calc(35px + 2px);
+    text-align: center;
+  }
+
+  .AnimeBtn-text::before {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.8s;
+  }
+  .AnimeBtn-text::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: width 0.8s;
+  }
+
+  .is-AniBtn.AnimeBtn::after,
+  .is-AniBtn.AnimeBtn::before {
+    height: 100%;
+  }
+  .is-AniBtn .AnimeBtn-text::before,
+  .is-AniBtn .AnimeBtn-text::after {
+    width: 100%;
+  }
+  .a-Clip {
+    overflow: hidden;
+    display: block;
+  }
+  .a-ClipText {
+    display: block;
+    transition: transform 0.8s;
+    transform: translateY(102%);
+  }
+  .is-Clip .a-ClipText {
+    transform: translateY(0);
   }
 }

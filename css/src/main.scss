@@ -246,18 +246,7 @@
       margin-bottom: 80px;
       .site-container {
         .mainSecRow {
-          display: table;
-          width: 100%;
           .mainSecRow-cell {
-            display: table-cell;
-            &:first-child {
-              vertical-align: top;
-            }
-            &:last-child {
-              vertical-align: bottom;
-              width: 1%;
-            }
-
             .mainHeader-Clip {
               display: block;
               overflow: hidden;
@@ -280,76 +269,6 @@
               animation: MainHeaderText 0.8s forwards;
               animation-delay: 0.2s;
               opacity: 0;
-            }
-          }
-          .mainHeader-btn {
-            width: calc(226px + 4px);
-            float: right;
-
-            .AnimeBtn {
-              display: block;
-              position: relative;
-              &::before {
-                height: 0%;
-                content: "";
-                width: 2px;
-                background-color: #000;
-                position: absolute;
-                top: 0;
-                left: 0;
-                transition: height 0.8s;
-              }
-              &::after {
-                content: "";
-                width: 2px;
-                height: 0;
-                background-color: #000;
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                transition: height 0.8s;
-              }
-              .AnimeBtn-text {
-                font-size: 1.04166vw;
-                line-height: 1.2em;
-                color: #000;
-                font-weight: bold;
-                white-space: nowrap;
-                padding: calc(22px + 2px) calc(35px + 2px);
-                text-align: center;
-                &::before {
-                  content: "";
-                  width: 0%;
-                  height: 2px;
-                  background-color: #000;
-                  position: absolute;
-                  top: 0;
-                  left: 0;
-                  transition: width 0.8s;
-                }
-                &::after {
-                  content: "";
-                  width: 0%;
-                  height: 2px;
-                  background-color: #000;
-                  position: absolute;
-                  bottom: 0;
-                  right: 0;
-                  transition: width 0.8s;
-                }
-              }
-            }
-            .is-AniBtn.AnimeBtn {
-              &::after,
-              &::before {
-                height: 100%;
-              }
-            }
-            .is-AniBtn .AnimeBtn-text {
-              &::before,
-              &::after {
-                width: 100%;
-              }
             }
           }
         }
@@ -401,28 +320,6 @@
       .mainSlideTitle {
         margin-bottom: 50px;
         position: relative;
-        .mainTitleHead-title {
-          display: table-cell;
-          vertical-align: middle;
-          font-size: 80px;
-          line-height: 1.2em;
-          color: #000;
-          font-weight: bold;
-          width: 1%;
-          white-space: nowrap;
-          .a-Clip {
-            overflow: hidden;
-            display: block;
-            .a-ClipText {
-              display: block;
-              transition: transform 0.8s;
-              transform: translateY(102%);
-            }
-          }
-          .is-Clip .a-ClipText {
-            transform: translateY(0);
-          }
-        }
         .mainTitleHeadMeta {
           position: absolute;
           bottom: 20px;
@@ -546,6 +443,9 @@
           }
         }
       }
+    }
+    .mainProduct {
+      margin-bottom: 150px;
     }
   }
 }
