@@ -449,6 +449,103 @@
           }
         }
       }
+      .mainSlideBody {
+        .mainServiceSlideSec {
+          width: 500px;
+          .mainServiceSlide {
+            margin: 0 -20px;
+            .mainServiceSlide-container {
+              margin: 0 auto;
+              position: relative;
+              z-index: 1;
+              width: 100%;
+              height: 100%;
+              .mainServiceSlide-wrapper {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                display: flex;
+                transition: transform 600ms;
+                box-sizing: content-box;
+                transform: translate3d(0px, 0, 0);
+                .mainServiceSlide-item {
+                  padding: 0 20px;
+                  width: 500px;
+                  height: 100%;
+                  position: relative;
+                  display: block !important;
+                  transition: margin-right 0.7s;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  flex-shrink: 0;
+                  .mainServiceSlideItem {
+                    &::after {
+                      content: "";
+                      display: table;
+                      clear: both;
+                    }
+                    position: relative;
+                    .mainServiceSlideItem-link {
+                      display: block;
+                      .mainServiceSlideItemThumb {
+                        width: 500px;
+                        line-height: 0;
+                        float: left;
+                      }
+                      .mainServiceSlideItemCont {
+                        width: 500px;
+                        position: absolute;
+                        left: 500px;
+                        top: 0;
+                        overflow: hidden;
+                        padding-left: 80px;
+                        .mainServiceSlideItemCont-title {
+                          font-size: 60px;
+                          line-height: 1.4em;
+                          color: #000;
+                          font-weight: bold;
+                          margin-bottom: 105px;
+                          overflow: hidden;
+                          .mainServiceSlideItemCont-clip {
+                            display: block;
+                          }
+                        }
+                        .mainServiceSlideItemMeta {
+                          .MainServiceSlideItemMeta-count {
+                            font-size: 30px;
+                            line-height: 1.2em;
+                            color: #000;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                          }
+                          .MainServiceSlideItemMeta-sub {
+                            font-size: 40px;
+                            line-height: 1.4em;
+                            color: #000;
+                            font-weight: bold;
+                            overflow: hidden;
+                          }
+                          .MainServiceSlideItemMeta-text {
+                            font-size: 20px;
+                            line-height: 1.6em;
+                            color: #000;
+                            margin-top: 27px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                .mainServiceSlide-item.swiper-slide-active {
+                  margin-right: 570px;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
