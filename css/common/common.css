@@ -40,5 +40,13 @@
 
   #wrap {
     width: 100%;
+    padding-top: 250px;
+    overflow: hidden;
+  }
+  .header_container {
+    max-width: 1760px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 80px;
   }
 }

@@ -91,6 +91,7 @@ video {
   font-family: inherit;
   color: inherit;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -107,11 +108,13 @@ section {
   display: block;
 }
 body {
+  position: relative;
   line-height: 1.7;
   color: #101010;
   word-wrap: break-word;
   word-break: keep-all;
   font-weight: 400;
+  font-size: 16px;
 }
 ol,
 ul {

@@ -1,8 +1,0 @@
-@media all {
-  body {width: 100%; height:auto; background-color:var(--background);}
-  #wrap {position:relative; width:100%; max-width : 1440px; margin:auto; height:auto; min-height:1000px;
-    font-family:'Lato', 'Noto Sans KR', sans-serif;
-    font-size: 16px;
-    color:#222;
-    background-color: var(--background);}
-}
