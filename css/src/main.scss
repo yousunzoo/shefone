@@ -243,6 +243,7 @@
 
   #siteContent {
     .mainInfo {
+      margin-bottom: 80px;
       .site-container {
         .mainSecRow {
           display: table;
@@ -351,6 +352,47 @@
               }
             }
           }
+        }
+      }
+    }
+    .mainBanner {
+      height: 730px;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 140px;
+      .mainBannerBg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        line-height: 0;
+        .mainBannerSectionBg-img {
+          display: block;
+          position: absolute;
+          top: -35%;
+          left: 0;
+          right: 0;
+          height: 135%;
+          background-image: url("../../sources/main/main_banner_bg-min.png");
+          background-size: cover;
+          background-position: center center;
+        }
+      }
+      .mainBannerText {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        z-index: 5;
+        .mainBannerText-title {
+          text-align: center;
+          font-size: 112px;
+          line-height: 1.2em;
+          color: #fff;
+          text-shadow: 2px 2px 12px rgb(0 0 0 / 20%);
+          font-weight: bold;
         }
       }
     }
