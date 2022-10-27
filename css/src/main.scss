@@ -1,3 +1,35 @@
+@keyframes SiteFamilyArrow {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes MainHeaderClip {
+  0% {
+    transform: translateY(102%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes MainHeaderText {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
 #wrap {
   #header {
     position: fixed;
@@ -45,11 +77,12 @@
               color: #000;
               position: absolute;
               top: 50%;
-              right: -70px;
+              right: -67px;
               transform: translateY(-50%);
               line-height: 1.4em;
               font-weight: bold;
               margin-top: 1px;
+              font-size: 22px;
             }
           }
           .menuBtn-close {
@@ -100,6 +133,8 @@
               left: 0;
               width: 100%;
               overflow: hidden;
+              animation: SiteFamilyArrow 1s ease-in forwards;
+              animation-delay: 0.2s;
               &::after {
                 content: "";
                 width: 100%;
@@ -199,6 +234,121 @@
               font-size: 40px;
               line-height: 1.4em;
               font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #siteContent {
+    .mainInfo {
+      .site-container {
+        .mainSecRow {
+          display: table;
+          width: 100%;
+          .mainSecRow-cell {
+            display: table-cell;
+            &:first-child {
+              vertical-align: top;
+            }
+            &:last-child {
+              vertical-align: bottom;
+              width: 1%;
+            }
+
+            .mainHeader-Clip {
+              display: block;
+              overflow: hidden;
+              .mainHeader-ClipText {
+                line-height: 0;
+                display: block;
+                animation: MainHeaderClip 0.8s forwards;
+                animation-delay: 0.2s;
+                transform: translateY(102%);
+                .mainHeader-img {
+                  width: 600px;
+                }
+              }
+            }
+            .mainSecRow-text {
+              margin-top: 50px;
+              font-size: 24px;
+              line-height: 1.6em;
+              font-weight: 500;
+              animation: MainHeaderText 0.8s forwards;
+              animation-delay: 0.2s;
+              opacity: 0;
+            }
+          }
+          .mainHeader-btn {
+            width: calc(226px + 4px);
+            float: right;
+
+            .AnimeBtn {
+              display: block;
+              position: relative;
+              &::before {
+                height: 0%;
+                content: "";
+                width: 2px;
+                background-color: #000;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: height 0.8s;
+              }
+              &::after {
+                content: "";
+                width: 2px;
+                height: 0;
+                background-color: #000;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                transition: height 0.8s;
+              }
+              .AnimeBtn-text {
+                font-size: 1.04166vw;
+                line-height: 1.2em;
+                color: #000;
+                font-weight: bold;
+                white-space: nowrap;
+                padding: calc(22px + 2px) calc(35px + 2px);
+                text-align: center;
+                &::before {
+                  content: "";
+                  width: 0%;
+                  height: 2px;
+                  background-color: #000;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  transition: width 0.8s;
+                }
+                &::after {
+                  content: "";
+                  width: 0%;
+                  height: 2px;
+                  background-color: #000;
+                  position: absolute;
+                  bottom: 0;
+                  right: 0;
+                  transition: width 0.8s;
+                }
+              }
+            }
+            .is-AniBtn.AnimeBtn {
+              &::after,
+              &::before {
+                height: 100%;
+              }
+            }
+            .is-AniBtn .AnimeBtn-text {
+              &::before,
+              &::after {
+                width: 100%;
+              }
             }
           }
         }

@@ -1,3 +1,55 @@
+@-webkit-keyframes SiteFamilyArrow {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes SiteFamilyArrow {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes MainHeaderClip {
+  0% {
+    transform: translateY(102%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes MainHeaderClip {
+  0% {
+    transform: translateY(102%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes MainHeaderText {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes MainHeaderText {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
 #wrap #header {
   position: fixed;
   top: 0;
@@ -46,11 +98,12 @@
   color: #000;
   position: absolute;
   top: 50%;
-  right: -70px;
+  right: -67px;
   transform: translateY(-50%);
   line-height: 1.4em;
   font-weight: bold;
   margin-top: 1px;
+  font-size: 22px;
 }
 #wrap #header .header_container .header_info .menuBtn .menuBtn-close {
   width: 36px;
@@ -101,6 +154,10 @@
   left: 0;
   width: 100%;
   overflow: hidden;
+  -webkit-animation: SiteFamilyArrow 1s ease-in forwards;
+          animation: SiteFamilyArrow 1s ease-in forwards;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 #wrap #header .header_container .header_info .siteFamily .siteFamily-text .siteFamily-bar::after {
   content: "";
@@ -199,4 +256,108 @@
   font-size: 40px;
   line-height: 1.4em;
   font-weight: bold;
+}
+#wrap #siteContent .mainInfo .site-container .mainSecRow {
+  display: table;
+  width: 100%;
+}
+#wrap #siteContent .mainInfo .site-container .mainSecRow .mainSecRow-cell {
+  display: table-cell;
+}
+#wrap #siteContent .mainInfo .site-container .mainSecRow .mainSecRow-cell:first-child {
+  vertical-align: top;
+}
+#wrap #siteContent .mainInfo .site-container .mainSecRow .mainSecRow-cell:last-child {
+  vertical-align: bottom;
+  width: 1%;
+}
+#wrap #siteContent .mainInfo .site-container .mainSecRow .mainSecRow-cell .mainHeader-Clip {
+  display: block;
+  overflow: hidden;
+}
+#wrap #siteContent .mainInfo .site-container .mainSecRow .mainSecRow-cell .mainHeader-Clip .mainHeader-ClipText {
+  line-height: 0;
+  display: block;
+  -webkit-animation: MainHeaderClip 0.8s forwards;
+          animation: MainHeaderClip 0.8s forwards;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  transform: translateY(102%);
+}
+#wrap #siteContent .mainInfo .site-container .mainSecRow .mainSecRow-cell .mainHeader-Clip .mainHeader-ClipText .mainHeader-img {
+  width: 600px;
+}
+#wrap #siteContent .mainInfo .site-container .mainSecRow .mainSecRow-cell .mainSecRow-text {
+  margin-top: 50px;
+  font-size: 24px;
+  line-height: 1.6em;
+  font-weight: 500;
+  -webkit-animation: MainHeaderText 0.8s forwards;
+          animation: MainHeaderText 0.8s forwards;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  opacity: 0;
+}
+#wrap #siteContent .mainInfo .site-container .mainSecRow .mainHeader-btn {
+  width: 230px;
+  float: right;
+}
+#wrap #siteContent .mainInfo .site-container .mainSecRow .mainHeader-btn .AnimeBtn {
+  display: block;
+  position: relative;
+}
+#wrap #siteContent .mainInfo .site-container .mainSecRow .mainHeader-btn .AnimeBtn::before {
+  height: 0%;
+  content: "";
+  width: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: height 0.8s;
+}
+#wrap #siteContent .mainInfo .site-container .mainSecRow .mainHeader-btn .AnimeBtn::after {
+  content: "";
+  width: 2px;
+  height: 0;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: height 0.8s;
+}
+#wrap #siteContent .mainInfo .site-container .mainSecRow .mainHeader-btn .AnimeBtn .AnimeBtn-text {
+  font-size: 1.04166vw;
+  line-height: 1.2em;
+  color: #000;
+  font-weight: bold;
+  white-space: nowrap;
+  padding: 24px 37px;
+  text-align: center;
+}
+#wrap #siteContent .mainInfo .site-container .mainSecRow .mainHeader-btn .AnimeBtn .AnimeBtn-text::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 0.8s;
+}
+#wrap #siteContent .mainInfo .site-container .mainSecRow .mainHeader-btn .AnimeBtn .AnimeBtn-text::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: width 0.8s;
+}
+#wrap #siteContent .mainInfo .site-container .mainSecRow .mainHeader-btn .is-AniBtn.AnimeBtn::after, #wrap #siteContent .mainInfo .site-container .mainSecRow .mainHeader-btn .is-AniBtn.AnimeBtn::before {
+  height: 100%;
+}
+#wrap #siteContent .mainInfo .site-container .mainSecRow .mainHeader-btn .is-AniBtn .AnimeBtn-text::before, #wrap #siteContent .mainInfo .site-container .mainSecRow .mainHeader-btn .is-AniBtn .AnimeBtn-text::after {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

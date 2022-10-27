@@ -43,10 +43,15 @@
     padding-top: 250px;
     overflow: hidden;
   }
-  .header_container {
+  .header_container,
+  .site-container {
     max-width: 1760px;
     margin: 0 auto;
     position: relative;
     padding: 0 80px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
