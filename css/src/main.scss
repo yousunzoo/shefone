@@ -396,5 +396,59 @@
         }
       }
     }
+    .mainSlide {
+      margin-bottom: 150px;
+      .mainSlideTitle {
+        margin-bottom: 50px;
+        position: relative;
+        .mainTitleHead-title {
+          display: table-cell;
+          vertical-align: middle;
+          font-size: 80px;
+          line-height: 1.2em;
+          color: #000;
+          font-weight: bold;
+          width: 1%;
+          white-space: nowrap;
+          .a-Clip {
+            overflow: hidden;
+            display: block;
+            .a-ClipText {
+              display: block;
+              transition: transform 0.8s;
+              transform: translateY(102%);
+            }
+          }
+          .is-Clip .a-ClipText {
+            transform: translateY(0);
+          }
+        }
+        .mainTitleHeadMeta {
+          position: absolute;
+          bottom: 20px;
+          right: 0;
+          overflow: hidden;
+          .swiper-btn-prev {
+            width: 50px;
+            height: 15px;
+            margin-right: 20px;
+            background-image: url("../../sources/icon/ico_sv_slide_arrow_prev.svg");
+            background-size: cover;
+            display: block;
+            float: left;
+            cursor: pointer;
+          }
+          .swiper-btn-next {
+            width: 50px;
+            height: 15px;
+            background-image: url("../../sources/icon/ico_sv_slide_arrow_next.svg");
+            background-size: cover;
+            display: block;
+            float: right;
+            cursor: pointer;
+          }
+        }
+      }
+    }
   }
 }

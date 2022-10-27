@@ -404,4 +404,58 @@
   color: #fff;
   text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
   font-weight: bold;
+}
+#wrap #siteContent .mainSlide {
+  margin-bottom: 150px;
+}
+#wrap #siteContent .mainSlide .mainSlideTitle {
+  margin-bottom: 50px;
+  position: relative;
+}
+#wrap #siteContent .mainSlide .mainSlideTitle .mainTitleHead-title {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 80px;
+  line-height: 1.2em;
+  color: #000;
+  font-weight: bold;
+  width: 1%;
+  white-space: nowrap;
+}
+#wrap #siteContent .mainSlide .mainSlideTitle .mainTitleHead-title .a-Clip {
+  overflow: hidden;
+  display: block;
+}
+#wrap #siteContent .mainSlide .mainSlideTitle .mainTitleHead-title .a-Clip .a-ClipText {
+  display: block;
+  transition: transform 0.8s;
+  transform: translateY(102%);
+}
+#wrap #siteContent .mainSlide .mainSlideTitle .mainTitleHead-title .is-Clip .a-ClipText {
+  transform: translateY(0);
+}
+#wrap #siteContent .mainSlide .mainSlideTitle .mainTitleHeadMeta {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  overflow: hidden;
+}
+#wrap #siteContent .mainSlide .mainSlideTitle .mainTitleHeadMeta .swiper-btn-prev {
+  width: 50px;
+  height: 15px;
+  margin-right: 20px;
+  background-image: url("../../sources/icon/ico_sv_slide_arrow_prev.svg");
+  background-size: cover;
+  display: block;
+  float: left;
+  cursor: pointer;
+}
+#wrap #siteContent .mainSlide .mainSlideTitle .mainTitleHeadMeta .swiper-btn-next {
+  width: 50px;
+  height: 15px;
+  background-image: url("../../sources/icon/ico_sv_slide_arrow_next.svg");
+  background-size: cover;
+  display: block;
+  float: right;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
