@@ -1,0 +1,52 @@
+@media all {
+   /* header */
+ header {position:absolute; width: 100%; height:100px; z-index:1000; transition:background-color 300ms ease }
+ .header_inner {position:absolute; width: 100%; height: 100%; padding:0 15px; box-sizing: border-box; transition:all 300ms ease}
+ .header_inner .logo {position:absolute; display: block; width: 180px; height: 100px; z-index:100;}
+ .header_inner .logo a {display:block; width: 100%; height: 100%;}
+ .header_inner .logo img {width: 100%; height: 100%; margin:0 3px;}
+ .header_inner .header_util_box {position:absolute; top:50%; right:15px; transform:translateY(-50%); width: 150px; height: 40px; z-index:100; }
+ .header_lang {float:left; width: 80px; height: 100%; padding:5px 0;}
+ .header_lang li {float:left; width: 40px; height: 30px;}
+ .header_lang li a {display: block; width: 40px; height: 30px;
+   font-size:12px;  font-weight:600; text-align: center;
+   line-height: 30px; letter-spacing: -0.25px; background-color: #fff;}
+  .mobile_more_icon {display:none;}
+ .header_lang li:first-child a {border-radius: 50px 0 0 50px;}
+ .header_lang li:last-child a {border-radius: 0 50px 50px 0;}
+ .header_lang .selected a {
+   color:#fff;
+   background: linear-gradient(90deg, #2BB673, #0BA9B5);}
+  .site_map {float:right; font-size: 30px; color:#666; line-height:40px; cursor:pointer }
+  .site_map i {display:none;}
+  .site_map .active {display:inline-block;} 
+  
+ #gnb {position:absolute; width: 100%; z-index:99; }
+ .header_gnb_menu {width: 950px; height: 100%; margin:auto;}
+ .header_gnb_menu > li {position:relative; float:left; text-transform: uppercase;}
+ .header_gnb_menu > li > a {padding: 0 32px; height:100px; line-height:100px;
+ font-size: 15px; font-weight:600; letter-spacing: -0.5px; color:var(--gray_01)}
+ .header_gnb_menu > li > a:before {position:absolute; bottom:0; left:50%; display:block; content:''; width:0; height:2px; background-color: #222; transition:all 300ms}
+
+
+ /* gnb_submenu */
+ #gnbBg {display:none; position:absolute; top:100px; width: 100%; height: 230px; z-index:0; background-color: #fff;}
+ .header_gnb_menu > li > .gnb_2dep {display:none; position:absolute; top:100px; left:0px; z-index:99; width: 100%; height: 230px;}
+ .header_gnb_menu > li > .gnb_2dep  > ul {padding:27px 0}
+ .gnb_2dep li a {width: 100%; line-height:35px; text-align: center; color:#999; font-size: 15px; font-weight: 400; letter-spacing:-0.25px}
+ 
+ /* gnb_overlay_bg */
+ .gnb_overlay_bg {display:none; opacity:1; position:fixed; top:0; left:0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6); z-index:90;}
+
+ /* hover 시 수행할 기능 */
+ .header_gnb_menu > li:hover > a {color:#222}
+ .header_gnb_menu > li:hover > a:before {width: 100%; margin-left:-50%;}
+ .gnb_2dep li a:hover {color:#222}
+
+ /* mobile 기기에서 스크롤y값 헤더높이 벗어나면 header 상단 고정 */
+ header.fixed {position:fixed; top:0; left:0;}
+ header.fixed .header_inner  {
+  background-color: #fff;
+  }
+
+}

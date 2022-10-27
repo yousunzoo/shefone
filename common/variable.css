@@ -1,0 +1,25 @@
+:root {
+
+
+  /* Color styles */
+--main_01: #2BB673;
+--main_02: #0BA9B5;
+--black_01: #222222;
+--white_01: #FFFFFF;
+--white_02: #EEEEEE;
+--gray_01: #999999;
+--gray_02: #DDDDDD;
+--background: #F2F2F2;
+--gray_02: #AAAAAA;
+--product_01: #E3F1FF;
+--product_02: #E3E2E0;
+--product_03: #F2EFF1;
+--product_04: #FAEEEF;
+--product_05: #eff7fa;
+--product_06: #f7f1ed;
+--product_07: #DCDCE3;
+--product_08: #D7DAD0;
+--product_09: #F9F8E1;
+--table: #f1f0f7;
+--card: #dadad9;
+}

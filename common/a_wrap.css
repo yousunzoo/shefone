@@ -1,0 +1,9 @@
+@media all {
+  body {width: 100%; height:auto; background-color:var(--background);}
+  #wrap {position:relative; width:100%; margin:auto; height:auto; 
+    overflow: hidden;
+    font-family:'Lato', 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color:#222;
+    background-color: #fff;}
+}
