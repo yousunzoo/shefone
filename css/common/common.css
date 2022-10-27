@@ -51,6 +51,11 @@
     padding: 0 80px;
   }
 
+  .site-container::after {
+    display: table;
+    content: "";
+    clear: both;
+  }
   .mainSecRow {
     display: table;
     width: 100%;

@@ -447,5 +447,160 @@
     .mainProduct {
       margin-bottom: 150px;
     }
+    .mainInquiry {
+      .is-View.mainInquiry-container::before {
+        width: 100%;
+      }
+      .mainInquiry-container {
+        &::before {
+          width: 0%;
+          content: "";
+          height: 2px;
+          background-color: #000;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transition: width 0.8s;
+        }
+        position: relative;
+        padding-top: 2px;
+        .mainInquiry-link {
+          padding: 46px 0;
+          display: block;
+          .mainInquiry-inner {
+            &::after {
+              content: "";
+              width: 60px;
+              height: 18px;
+              background-image: url(../../sources/icon/ico_sv_slide_arrow_next.svg);
+              background-size: 60px 18px;
+              position: absolute;
+              bottom: 0;
+              right: 0;
+            }
+            position: relative;
+            .mainInquiry-cate {
+              font-size: 20px;
+              line-height: 1.4em;
+              color: #000;
+              font-weight: bold;
+              margin-bottom: 35px;
+            }
+            .mainInquiry-title {
+              font-size: 40px;
+              line-height: 1.3em;
+              color: #000;
+              font-weight: bold;
+            }
+            .mainInquiry-text {
+              margin-top: 27px;
+              font-size: 24px;
+              line-height: 1.5em;
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #footer {
+    margin-top: 150px;
+    position: relative;
+    flex-shrink: 0;
+    .footer-container {
+      &::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      max-width: 1760px;
+      margin: 0 auto;
+      position: relative;
+      padding: 0 80px;
+      .footerInner {
+        border-top: solid 1px #000;
+        padding: 75px 0 100px;
+        position: relative;
+        .footerNav-list {
+          &::after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          font-size: 0;
+          line-height: 0;
+          margin: 0 -20px 28px;
+          .footerNav-item {
+            &::after {
+              content: "";
+              width: 1px;
+              height: 11px;
+              background-color: #cccccc;
+              position: absolute;
+              top: 50%;
+              right: 0;
+              transform: translateY(-50%);
+            }
+            &:first-child .footerNav-link {
+              &::after {
+                content: "";
+                width: 14px;
+                height: 15px;
+                background-image: url(../../sources/icon/ico_new_window.svg);
+                background-size: 14px 15px;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+              }
+              font-weight: bold;
+              position: relative;
+              padding-right: 24px;
+            }
+            &:last-child::after {
+              display: none;
+            }
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0 20px;
+            position: relative;
+            .footerNav-link {
+              display: block;
+              font-size: 16px;
+              line-height: 1.4em;
+              color: #000;
+              font-weight: 500;
+            }
+          }
+        }
+        .footerInfo {
+          margin-bottom: 42px;
+          .footerInfo-item {
+            &:first-child {
+              margin-top: 0;
+            }
+            font-size: 16px;
+            line-height: 1.6em;
+            color: #000;
+            margin-top: 5px;
+          }
+        }
+        .footerIsms {
+          display: block;
+          line-height: 0;
+          width: 94px;
+          position: absolute;
+          top: 75px;
+          right: 0;
+        }
+        .footerCopy {
+          font-size: 14px;
+          line-height: 1.5em;
+          color: #555555;
+      }
+        }
+      }
+    }
   }
 }
