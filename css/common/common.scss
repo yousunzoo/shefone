@@ -122,6 +122,11 @@
     padding: 0 80px;
   }
 
+  .page-container::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
   .site-container::after {
     display: table;
     content: "";

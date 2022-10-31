@@ -231,3 +231,96 @@
     }
   }
 }
+
+.pageTopBanner {
+  height: 430px;
+  position: relative;
+  margin-bottom: 100px;
+  .pageTopBannerBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    line-height: 0;
+    overflow: hidden;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    .pageTopBannerBg-img {
+      display: block;
+      position: absolute;
+      top: 0%;
+      left: 0;
+      right: 0;
+      height: 150%;
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+  .pageTopBannerText {
+    position: absolute;
+    bottom: 80px;
+    left: 80px;
+    width: 70%;
+    z-index: 5;
+    .pageTopBannerText-title {
+      font-size: 60px;
+      line-height: 1.2em;
+      color: #fff;
+      font-weight: bold;
+    }
+    .pageTopBannerText-text {
+      font-size: 24px;
+      line-height: 1.5em;
+      color: #fff;
+      font-weight: 500;
+      margin-top: 25px;
+    }
+  }
+}
+.pageTable-tbl {
+  width: 100%;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  th,
+  td {
+    vertical-align: middle;
+    text-align: center;
+  }
+  thead th {
+    border-bottom: solid 3px #000000;
+    border-left: solid 1px #000;
+    font-size: 23px;
+    line-height: 1.4em;
+    color: #000;
+    font-weight: bold;
+    padding: 21px 10px;
+    &:first-child {
+      border-left: none;
+    }
+  }
+  tbody tr {
+    &:first-child {
+      border-top: none;
+    }
+  }
+  tbody th,
+  tbody td {
+    font-size: 20px;
+    line-height: 1.4em;
+    color: #000;
+    padding: 21px 10px;
+    font-weight: normal;
+    border-top: 1px solid #000;
+  }
+  tbody td {
+    border-left: 1px solid #000;
+  }
+}
