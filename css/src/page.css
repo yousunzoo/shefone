@@ -1,0 +1,123 @@
+.pageHeaderTitle {
+  text-align: center;
+  margin-bottom: 85px;
+}
+.pageHeaderTitle .pageHeaderTitle-parent {
+  font-size: 36px;
+  line-height: 1.2em;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+.pageHeaderTitle .pageHeaderTitle-title {
+  font-size: 70px;
+  line-height: 1.1em;
+  color: #000;
+  font-weight: bold;
+}
+
+.siteCont .onlyBanner {
+  margin-bottom: 100px;
+  position: relative;
+  height: 480px;
+}
+.siteCont .onlyBanner .onlyBannerBg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+}
+.siteCont .onlyBanner .onlyBannerBg .onlyBannerBg-img {
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  right: 0;
+  height: 150%;
+  background-size: cover;
+  background-position: center centers;
+}
+.siteCont .bgTitleLogo {
+  text-align: right;
+  font-size: 0;
+  line-height: 0;
+  height: 205px;
+  position: relative;
+  margin-bottom: 110px;
+}
+.siteCont .bgTitleLogo .bgTitleLogo-inner {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+}
+.siteCont .bgTitleLogo .bgTitleLogo-img {
+  display: block;
+  float: right;
+  width: 1260px;
+}
+.siteCont .brandHeader {
+  margin-bottom: 110px;
+}
+.siteCont .brandHeader .brandHeader-title {
+  font-size: 60px;
+  line-height: 1.4em;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 68px;
+}
+.siteCont .brandHeader .brandHeader-sub {
+  font-size: 40px;
+  line-height: 1.4em;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 28px;
+}
+.siteCont .brandHeader .brandHeader-text {
+  font-size: 24px;
+  line-height: 1.6em;
+  color: #000;
+}
+.siteCont .brandLogoPost {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.siteCont .brandLogoPostThumb {
+  display: table-cell;
+  vertical-align: top;
+  line-height: 0;
+  width: 786px;
+}
+.siteCont .brandLogoPostCont {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 60px;
+}
+.siteCont .brandLogoPostCont .brandLogoPostCont-title {
+  font-size: 40px;
+  line-height: 1.4em;
+  color: #000;
+  font-weight: bold;
+}
+.siteCont .brandLogoPostCont .brandLogoPostCont-text {
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 1.7em;
+}
+
+.a-OpacityTop {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: transform, opacity, 0.8s;
+}
+
+.a-OpacityTop.is-OpacityTop {
+  transform: translateY(0);
+  opacity: 1;
+}/*# sourceMappingURL=page.css.map */
