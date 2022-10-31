@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .pageHeaderTitle {
   text-align: center;
   margin-bottom: 85px;
@@ -109,17 +110,6 @@
   margin-top: 30px;
   font-size: 20px;
   line-height: 1.7em;
-}
-
-.a-OpacityTop {
-  transform: translateY(50px);
-  opacity: 0;
-  transition: transform, opacity, 0.8s;
-}
-
-.a-OpacityTop.is-OpacityTop {
-  transform: translateY(0);
-  opacity: 1;
 }
 
 .newsPost {
@@ -499,4 +489,288 @@
 .mediumSection {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.solutionService {
+  position: relative;
+  border: 1px solid #e5e5e5;
+}
+.solutionService .solutionService-inner {
+  padding: 85px 106px;
+}
+.solutionService .solutionService-inner .solutionServiceImg {
+  width: 37.5%;
+  margin: 0 auto;
+  line-height: 0;
+}
+.solutionService .solutionService-inner .solutionServiceCont {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-title {
+  display: none;
+}
+.solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item {
+  position: absolute;
+  min-height: 167px;
+}
+.solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item:first-child {
+  top: 85px;
+  left: 106px;
+}
+.solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item:nth-child(2) {
+  top: 85px;
+  right: 106px;
+}
+.solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item:nth-child(3) {
+  bottom: 85px;
+  left: 106px;
+}
+.solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item:last-child {
+  bottom: 85px;
+  right: 106px;
+}
+.solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item .solutionItem {
+  height: 100%;
+}
+.solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item .solutionItem .solutionItem-tit {
+  display: block;
+  color: #000;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.4em;
+}
+.solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item .solutionItem .solutionItem-cont {
+  margin-top: 10px;
+}
+.solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item .solutionItem .solutionItem-cont .solutionItem-txt {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  padding-left: 12px;
+  color: #000;
+  font-size: 20px;
+  line-height: 1.4em;
+}
+.solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item .solutionItem .solutionItem-cont .solutionItem-txt::before {
+  content: "·";
+  display: block;
+  color: #000;
+  font-size: 20px;
+  line-height: 1.2em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.solutionProcess .solutionProcessHeader {
+  margin-bottom: 100px;
+}
+.solutionProcess .solutionProcessHeader .solutionProcessHeader-tit {
+  display: block;
+  color: #000;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.4em;
+}
+.solutionProcess .solutionProcessHeader .solutionProcessHeader-txt {
+  display: block;
+  margin-top: 10px;
+  color: #000;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.4em;
+}
+.solutionProcess .solutionProcessContStep-list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.solutionProcess .solutionProcessContStep-item {
+  overflow: hidden;
+  float: left;
+  width: 14.28%;
+  padding-right: 40px;
+}
+.solutionProcess .solutionProcessContStep-item .solutionItem {
+  height: 100%;
+}
+.solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemStep {
+  display: block;
+  width: 75px;
+  height: 75px;
+  position: relative;
+  background-color: #000;
+  border-radius: 100%;
+}
+.solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemStep::after {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemStep .solutionItemStep-inner {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemStep .solutionItemStep-inner .solutionItemStep-txt {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+.solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemStep .solutionItemStep-inner .solutionItemStep-num {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+.solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemCont {
+  margin-top: 40px;
+}
+.solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemCont .solutionItemCont-tit {
+  display: block;
+  margin-bottom: 18px;
+  color: #000;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+.solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemCont .solutionItemCont-txt {
+  display: block;
+  color: #000;
+  font-size: 18px;
+  line-height: 1.6em;
+}
+.solutionProcess .solutionProcessContStep-item:last-child .solutionItemStep::after {
+  display: none;
+}
+
+.pageSubTab {
+  margin-top: 140px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.pageSubTab .pageSubTab-list {
+  font-size: 0;
+  line-height: 0;
+}
+.pageSubTab .pageSubTab-list .pageSubTab-item {
+  display: inline-block;
+  max-width: 33.3333%;
+  width: 300px;
+}
+.pageSubTab .pageSubTab-list .pageSubTab-item .pageSubTab-link {
+  font-size: 20px;
+  line-height: 1.4em;
+  color: #000;
+  display: block;
+  padding: 16px 20px;
+  border: solid 1px #000;
+  margin-left: -1px;
+  position: relative;
+}
+.pageSubTab .pageSubTab-list .pageSubTab-item .pageSubTab-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: solid 2px #000;
+  opacity: 0;
+}
+.pageSubTab .pageSubTab-list .is-Current .pageSubTab-link {
+  font-weight: bold;
+  z-index: 5;
+}
+.pageSubTab .pageSubTab-list .is-Current .pageSubTab-link::after {
+  opacity: 1;
+}
+
+.pageSubTabContSec {
+  display: none;
+}
+
+.processAtc .processAtc-title {
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.4em;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+.processAtc .processAtcList {
+  margin-bottom: 100px;
+  overflow: hidden;
+  max-width: 1222px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.processAtc .processAtcList .processAtcList-list {
+  margin: -25px -40px;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+.processAtc .processAtcList .processAtcList-list .processAtcList-item {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 25px 40px;
+  position: relative;
+}
+.processAtc .processAtcList .processAtcList-list .processAtcList-item .processListItem {
+  border-top: solid 3px #000;
+  border-bottom: solid 1px #000;
+  padding: 30px 0 35px;
+  text-align: left;
+}
+.processAtc .processAtcList .processAtcList-list .processAtcList-item .processListItem .processListItem-step {
+  font-size: 18px;
+  line-height: 1.2em;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.processAtc .processAtcList .processAtcList-list .processAtcList-item .processListItem .processListItem-text {
+  font-size: 24px;
+  line-height: 1.4em;
+  color: #000;
+  font-weight: 500;
+}
+.processAtc .processAtcList .processAtcList-list .processAtcList-item::after {
+  content: "";
+  width: 10px;
+  height: 20px;
+  background-image: url("../../sources/service/totalSolution/ico_process_arrow.svg");
+  background-size: 10px 20px;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  transform: translateY(-50%);
+}
+.processAtc .processAtcList .processAtcList-list .processAtcList-item:nth-child(5)::after, .processAtc .processAtcList .processAtcList-list .processAtcList-item:last-child::after {
+  display: none;
+}
+.processAtc .processOrg .organization-text {
+  margin-top: 5px;
+}
+.processAtc .processOrg .organization-list.it-Height {
+  min-height: 156px;
 }/*# sourceMappingURL=page.css.map */

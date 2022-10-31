@@ -248,6 +248,12 @@
   .is-AniBtn .AnimeBtn-text::after {
     width: 100%;
   }
+  .pageSubTabContSec.is-Current {
+    display: block;
+  }
+  .type-Center {
+    text-align: center;
+  }
   .a-Clip {
     overflow: hidden;
     display: block;
