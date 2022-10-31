@@ -242,6 +242,21 @@
   .is-Clip .a-ClipText {
     transform: translateY(0);
   }
+  .a-Opacity.is-Opacity {
+    opacity: 1;
+  }
+  .a-Opacity {
+    transition: opacity 0.8s;
+    opacity: 0;
+  }
+  .a-OpacityTop {
+    transition: opacity 0.8s;
+    opacity: 0;
+  }
+  .a-OpacityTop.is-OpacityTop {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 #header {
   position: fixed;
