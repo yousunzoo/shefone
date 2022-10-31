@@ -123,3 +123,111 @@
   transform: translateY(0);
   opacity: 1;
 }
+
+.newsPost {
+  margin-top: 65px;
+  .newsPost-item {
+    border-top: 1px solid #e0e0e0;
+    &:first-child {
+      border-top: none;
+    }
+    .newsPost-noPost {
+      text-align: center;
+      font-size: 32px;
+      line-height: 1.4em;
+      color: #000;
+      font-weight: 500;
+      padding: 40px 0;
+    }
+  }
+}
+.listPaging {
+  margin-top: 100px;
+  text-align: center;
+  .listPaging-list {
+    display: inline-block;
+    margin: 0 -20px;
+    .listPaging-item {
+      display: inline-block;
+      padding: 0 20px;
+      &:first-child {
+        padding: 0;
+        padding-right: 70px;
+        .listPrevButton-link {
+          display: block;
+          position: relative;
+          padding-left: 40px;
+          color: #000;
+          font-size: 20px;
+          font-family: "Pretendard";
+          font-weight: 500;
+          line-height: 1.4em;
+          &::before {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-image: url("../../sources/download/ico-SinglePagingPrev-b.svg");
+            background-size: 30px 30px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+          }
+        }
+      }
+      &:last-child {
+        padding: 0;
+        padding-left: 70px;
+        .listNextButton-link {
+          display: block;
+          position: relative;
+          padding-right: 40px;
+          color: #000;
+          font-size: 20px;
+          font-family: "Pretendard";
+          font-weight: 500;
+          line-height: 1.4em;
+          &::before {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-image: url("../../sources/download/ico-SinglePagingNext-b.svg");
+            background-size: 30px 30px;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+          }
+        }
+      }
+      .listPaging-text {
+        display: block;
+        position: relative;
+        color: #000;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.4em;
+      }
+    }
+    .listPaging-item.is-Current {
+      .listPaging-text {
+        color: #fff;
+        &::after {
+          content: "";
+          display: block;
+          width: 30px;
+          height: 30px;
+          background-color: #000;
+          border-radius: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: -1;
+        }
+      }
+    }
+  }
+}
