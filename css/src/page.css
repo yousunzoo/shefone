@@ -325,16 +325,26 @@
   max-width: 778px;
   margin: 0 auto;
 }
-.smallSection .organization {
+.smallSection .imgBox {
+  line-height: 0;
+  text-align: center;
+}
+.smallSection .imgBox .supply-img {
+  display: block;
+  margin: 0 auto;
+  width: 432px;
+}
+
+.organization {
   margin-bottom: 110px;
 }
-.smallSection .organization .organization-item.Depth1 {
+.organization .organization-item.Depth1 {
   padding-bottom: 74px;
   position: relative;
   text-align: center;
   overflow: hidden;
 }
-.smallSection .organization .organizationDepth1-title {
+.organization .organizationDepth1-title {
   display: inline-block;
   font-size: 28px;
   line-height: 1.4em;
@@ -346,7 +356,7 @@
   background-color: #000;
   position: relative;
 }
-.smallSection .organization .organizationDepth1-title::after {
+.organization .organizationDepth1-title::after {
   content: "";
   width: 1px;
   height: 100px;
@@ -355,19 +365,22 @@
   bottom: -100px;
   left: 50%;
 }
-.smallSection .organization .organization-row {
+.organization .organization-row {
   overflow: hidden;
   padding-top: 55px;
   margin: 0 -39px;
 }
-.smallSection .organization .organization-row .organization-item {
+.organization .organization-row .organization-item {
   float: left;
   padding: 0 39px;
 }
-.smallSection .organization .col-50 .organization-item {
+.organization .col-33 .organization-item {
+  width: 33.333%;
+}
+.organization .col-50 .organization-item {
   width: 50%;
 }
-.smallSection .organization .organizationDepth2-title {
+.organization .organizationDepth2-title {
   display: block;
   font-size: 24px;
   line-height: 1.4em;
@@ -378,7 +391,7 @@
   border: solid 1px #000;
   position: relative;
 }
-.smallSection .organization .organizationDepth2-title::before {
+.organization .organizationDepth2-title::before {
   content: "";
   width: calc(100% + 80px);
   height: 1px;
@@ -388,7 +401,7 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.smallSection .organization .organizationDepth2-title::after {
+.organization .organizationDepth2-title::after {
   content: "";
   width: 1px;
   height: 100px;
@@ -397,27 +410,27 @@
   top: -100px;
   left: 50%;
 }
-.smallSection .organization .organization-item:first-child .organizationDepth2-title::before {
+.organization .organization-item:first-child .organizationDepth2-title::before {
   width: calc(50% + 40px);
   transform: translateX(0%);
 }
-.smallSection .organization .organization-item:last-child .organizationDepth2-title::before {
+.organization .organization-item:last-child .organizationDepth2-title::before {
   width: calc(50% + 40px);
   left: auto;
   right: 50%;
   transform: translateX(0%);
 }
-.smallSection .organization .organizationDepth2-sub {
+.organization .organizationDepth2-sub {
   margin-top: 48px;
   font-size: 20px;
   line-height: 1.4em;
   color: #000;
   font-weight: bold;
 }
-.smallSection .organization .organization-list {
+.organization .organization-list {
   margin-top: 13px;
 }
-.smallSection .organization .organization-list .organization-text {
+.organization .organization-list .organization-text {
   position: relative;
   font-size: 20px;
   line-height: 1.5em;
@@ -425,10 +438,10 @@
   padding-left: 13px;
   margin-top: 18px;
 }
-.smallSection .organization .organization-list .organization-text:first-child {
+.organization .organization-list .organization-text:first-child {
   margin-top: 0;
 }
-.smallSection .organization .organization-list .organization-text::before {
+.organization .organization-list .organization-text::before {
   content: "";
   width: 2px;
   height: 2px;
@@ -437,14 +450,11 @@
   left: 0;
   background-color: #000;
 }
-.smallSection .imgBox {
+.organization .organization-thumb {
+  margin: auto;
   line-height: 0;
-  text-align: center;
-}
-.smallSection .imgBox .supply-img {
-  display: block;
-  margin: 0 auto;
-  width: 432px;
+  margin-top: 19px;
+  width: 60%;
 }
 
 .mixedSec {
@@ -484,4 +494,9 @@
   display: block;
   font-size: 20px;
   line-height: 1.6em;
+}
+
+.mediumSection {
+  max-width: 1200px;
+  margin: 0 auto;
 }/*# sourceMappingURL=page.css.map */
