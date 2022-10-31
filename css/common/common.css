@@ -267,7 +267,237 @@
     margin-bottom: 80px !important;
   }
   .mb150 {
+    margin-bottom: 140px !important;
+  }
+  .mb150 {
     margin-bottom: 150px !important;
+  }
+  .mainBanner {
+    height: 730px;
+    position: relative;
+    overflow: hidden;
+  }
+  .mainBanner .mainBannerBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    line-height: 0;
+  }
+  .mainBanner .mainBannerBg .mainBannerSectionBg-img {
+    display: block;
+    position: absolute;
+    top: -35%;
+    left: 0;
+    right: 0;
+    height: 135%;
+    background-image: url("../../sources/main/main_banner_bg-min.png");
+    background-size: cover;
+    background-position: center center;
+  }
+  .mainBanner .mainBannerText {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 5;
+  }
+  .mainBanner .mainBannerText .mainBannerText-title {
+    text-align: center;
+    font-size: 112px;
+    line-height: 1.2em;
+    color: #fff;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+  }
+  .mainSlide .mainSlideTitle {
+    margin-bottom: 50px;
+    position: relative;
+  }
+  .mainSlide .mainSlideTitle .mainTitleHead-title {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 80px;
+    line-height: 1.2em;
+    color: #000;
+    font-weight: bold;
+    width: 1%;
+    white-space: nowrap;
+  }
+  .mainSlide .mainSlideTitle .mainTitleHeadMeta {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    overflow: hidden;
+  }
+  .mainSlide .mainSlideTitle .mainTitleHeadMeta .swiper-btn-prev {
+    width: 50px;
+    height: 15px;
+    background-image: url("../../sources/icon/ico_sv_slide_arrow_prev.svg");
+    background-size: 50px 15px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .mainSlide .mainSlideTitle .mainTitleHeadMeta .swiper-btn-next {
+    width: 50px;
+    height: 15px;
+    background-image: url("../../sources/icon/ico_sv_slide_arrow_next.svg");
+    background-size: 50px 15px;
+    display: block;
+    float: left;
+    cursor: pointer;
+  }
+  .mainSlide .mainServiceSlideSec .mainServiceSlide {
+    margin: 0 -2.2vw;
+  }
+  .mainSlide .mainServiceSlideSec .mainServiceSlide .mainServiceSlide-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 400%;
+    height: 100%;
+    display: flex;
+  }
+  .mainSlide .mainServiceSlideSec .mainServiceSlide .mainServiceSlide-wrapper .mainServiceSlide-item {
+    padding: 0 20px;
+    width: 500px;
+    display: block !important;
+    transition-property: margin-right;
+    transition-duration: 0.7s;
+  }
+  .mainSlide .mainServiceSlideSec .mainServiceSlide .mainServiceSlide-wrapper .mainServiceSlide-item:first-child {
+    margin-right: 570px;
+  }
+  .mainSlide .mainServiceSlideSec .mainServiceSlide .mainServiceSlide-wrapper .mainServiceSlide-item .mainServiceSlideItem {
+    position: relative;
+  }
+  .mainSlide .mainServiceSlideSec .mainServiceSlide .mainServiceSlide-wrapper .mainServiceSlide-item .mainServiceSlideItem::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .mainSlide .mainServiceSlideSec .mainServiceSlide .mainServiceSlide-wrapper .mainServiceSlide-item .mainServiceSlideItem .mainServiceSlideItem-link {
+    display: block;
+  }
+  .mainSlide .mainServiceSlideSec .mainServiceSlide .mainServiceSlide-wrapper .mainServiceSlide-item .mainServiceSlideItem .mainServiceSlideItemThumb {
+    width: 500px;
+    line-height: 0;
+    float: left;
+  }
+  .mainSlide .mainServiceSlideSec .mainServiceSlide .mainServiceSlide-wrapper .mainServiceSlide-item .mainServiceSlideItem .mainServiceSlideItemCont {
+    width: 570px;
+    position: absolute;
+    left: 500px;
+    top: 0;
+    overflow: hidden;
+    padding-left: 80px;
+  }
+  .mainSlide .mainServiceSlideSec .mainServiceSlide .mainServiceSlide-wrapper .mainServiceSlide-item .mainServiceSlideItem .mainServiceSlideItemCont .mainServiceSlideItemCont-title {
+    font-size: 60px;
+    line-height: 1.4em;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 105px;
+    overflow: hidden;
+  }
+  .mainSlide .mainServiceSlideSec .mainServiceSlide .mainServiceSlide-wrapper .mainServiceSlide-item .mainServiceSlideItem .mainServiceSlideItemCont .mainServiceSlideItemMeta .MainServiceSlideItemMeta-count {
+    font-size: 30px;
+    line-height: 1.2em;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .mainSlide .mainServiceSlideSec .mainServiceSlide .mainServiceSlide-wrapper .mainServiceSlide-item .mainServiceSlideItem .mainServiceSlideItemCont .mainServiceSlideItemMeta .MainServiceSlideItemMeta-sub {
+    font-size: 40px;
+    line-height: 1.4em;
+    color: #000;
+    font-weight: bold;
+    overflow: hidden;
+  }
+  .mainSlide .mainServiceSlideSec .mainServiceSlide .mainServiceSlide-wrapper .mainServiceSlide-item .mainServiceSlideItem .mainServiceSlideItemCont .mainServiceSlideItemMeta .MainServiceSlideItemMeta-text {
+    font-size: 20px;
+    line-height: 1.6em;
+    color: #000;
+    margin-top: 27px;
+  }
+  .mainSlide .mainServiceSlideSec .mainServiceSlide .mainServiceSlide-wrapper .mainServiceSlide-item.swiper-slide-active {
+    margin-right: 570px;
+  }
+  .mainProduct .mainProductBg {
+    margin-bottom: 50px;
+    position: relative;
+    height: 360px;
+    overflow: hidden;
+  }
+  .mainProduct .mainProductBg .mainProductBg-img {
+    display: block;
+    position: absolute;
+    top: -35%;
+    left: 0;
+    right: 0;
+    height: 135%;
+    background-image: url("../../sources/main/main_banner_bg2-min.png");
+    background-size: cover;
+    background-position: center center;
+  }
+  .mainInquiry .mainInquiry-container {
+    position: relative;
+    padding-top: 2px;
+  }
+  .mainInquiry .mainInquiry-container::before {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.8s;
+  }
+  .mainInquiry .mainInquiry-container .mainInquiry-link {
+    padding: 46px 0;
+    display: block;
+  }
+  .mainInquiry .mainInquiry-container .mainInquiry-link .mainInquiry-inner {
+    position: relative;
+  }
+  .mainInquiry .mainInquiry-container .mainInquiry-link .mainInquiry-inner::after {
+    content: "";
+    width: 60px;
+    height: 18px;
+    background-image: url("../../sources/icon/ico_sv_slide_arrow_next.svg");
+    background-size: 60px 18px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .mainInquiry .mainInquiry-container .mainInquiry-link .mainInquiry-inner .mainInquiry-cate {
+    font-size: 20px;
+    line-height: 1.4em;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 35px;
+  }
+  .mainInquiry .mainInquiry-container .mainInquiry-link .mainInquiry-inner .mainInquiry-title {
+    font-size: 40px;
+    line-height: 1.3em;
+    color: #000;
+    font-weight: bold;
+  }
+  .mainInquiry .mainInquiry-container .mainInquiry-link .mainInquiry-inner .mainInquiry-text {
+    margin-top: 27px;
+    font-size: 24px;
+    line-height: 1.5em;
+    color: #000;
+  }
+  .mainInquiry .is-View.mainInquiry-container::before {
+    width: 100%;
   }
 }
 #header {
