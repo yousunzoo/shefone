@@ -308,6 +308,31 @@
   .mediumSection {
     max-width: 62.5vw;
   }
+  .mixedSec .mixedSecTitle {
+    width: 18.8vw;
+  }
+  .mixedSec .mixedSecTitle .mixedSecTitle-title {
+    font-size: 2.08vw;
+  }
+  .mixedSec .mixedSecText {
+    width: calc(100% - 18.8vw);
+    padding-left: 6.25vw;
+  }
+  .mixedSec .mixedSecText .mixedItemCont-text {
+    font-size: 1.04vw;
+  }
+  .mixedSec .mixedSecText .mixedItemCont-text.big-size {
+    font-size: 1.25vw;
+  }
+  .mixedSec .mixedSecText .mixedItemTitle {
+    margin-bottom: 0.94vw;
+  }
+  .mixedSec .mixedSecText .mixedItemTitle .mixedItemTitle-title {
+    font-size: 1.46vw;
+  }
+  .mixedSec .mixedSecText .mixedItemCont-text {
+    font-size: 1.04vw;
+  }
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .pageHeaderTitle {
@@ -585,6 +610,31 @@
   }
   .mediumSection {
     max-width: 100%;
+  }
+  .mixedSec .mixedSecTitle {
+    width: 26.8vw;
+  }
+  .mixedSec .mixedSecTitle .mixedSecTitle-title {
+    font-size: 3.08vw;
+  }
+  .mixedSec .mixedSecText {
+    width: calc(100% - 26.8vw);
+    padding-left: 6.25vw;
+  }
+  .mixedSec .mixedSecText .mixedItemCont-text {
+    font-size: 1.82vw;
+  }
+  .mixedSec .mixedSecText .mixedItemCont-text.big-size {
+    font-size: 2vw;
+  }
+  .mixedSec .mixedSecText .mixedItemTitle {
+    margin-bottom: 1.24vw;
+  }
+  .mixedSec .mixedSecText .mixedItemTitle .mixedItemTitle-title {
+    font-size: 2.7vw;
+  }
+  .mixedSec .mixedSecText .mixedItemCont-text {
+    font-size: 1.82vw;
   }
 }
 @media screen and (max-width: 767px) and (min-width: 1px) {
@@ -904,5 +954,35 @@
   }
   .mediumSection {
     max-width: 100%;
+  }
+  .mixedSec {
+    display: block;
+  }
+  .mixedSec .mixedSecTitle {
+    width: 100%;
+    display: block;
+  }
+  .mixedSec .mixedSecTitle .mixedSecTitle-title {
+    font-size: 6.48vw;
+    margin-bottom: 3.97vw;
+  }
+  .mixedSec .mixedSecText {
+    width: 100%;
+    padding-left: 0;
+  }
+  .mixedSec .mixedSecText .mixedItemCont-text {
+    font-size: 3.73vw;
+  }
+  .mixedSec .mixedSecText .mixedItemCont-text.big-size {
+    font-size: 4.2vw;
+  }
+  .mixedSec .mixedSecText .mixedItemTitle {
+    margin-bottom: 2.83vw;
+  }
+  .mixedSec .mixedSecText .mixedItemTitle .mixedItemTitle-title {
+    font-size: 5.18vw;
+  }
+  .mixedSec .mixedSecText .mixedItemCont-text {
+    font-size: 3.73vw;
   }
 }/*# sourceMappingURL=page_device.css.map */

@@ -334,6 +334,35 @@
   .mediumSection {
     max-width: 62.5vw;
   }
+
+  // 맞춤형 제품 개발
+  .mixedSec {
+    .mixedSecTitle {
+      width: 18.8vw;
+      .mixedSecTitle-title {
+        font-size: 2.08vw;
+      }
+    }
+    .mixedSecText {
+      width: calc(100% - 18.8vw);
+      padding-left: 6.25vw;
+      .mixedItemCont-text {
+        font-size: 1.04vw;
+      }
+      .mixedItemCont-text.big-size {
+        font-size: 1.25vw;
+      }
+      .mixedItemTitle {
+        margin-bottom: 0.94vw;
+        .mixedItemTitle-title {
+          font-size: 1.46vw;
+        }
+      }
+      .mixedItemCont-text {
+        font-size: 1.04vw;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
@@ -635,6 +664,34 @@
   // 메뉴제안 & 시연회
   .mediumSection {
     max-width: 100%;
+  }
+  // 맞춤형 제품 개발
+  .mixedSec {
+    .mixedSecTitle {
+      width: 26.8vw;
+      .mixedSecTitle-title {
+        font-size: 3.08vw;
+      }
+    }
+    .mixedSecText {
+      width: calc(100% - 26.8vw);
+      padding-left: 6.25vw;
+      .mixedItemCont-text {
+        font-size: 1.82vw;
+      }
+      .mixedItemCont-text.big-size {
+        font-size: 2vw;
+      }
+      .mixedItemTitle {
+        margin-bottom: 1.24vw;
+        .mixedItemTitle-title {
+          font-size: 2.7vw;
+        }
+      }
+      .mixedItemCont-text {
+        font-size: 1.82vw;
+      }
+    }
   }
 }
 
@@ -978,5 +1035,36 @@
   // 메뉴제안 & 시연회
   .mediumSection {
     max-width: 100%;
+  }
+  // 맞춤형 제품 개발
+  .mixedSec {
+    display: block;
+    .mixedSecTitle {
+      width: 100%;
+      display: block;
+      .mixedSecTitle-title {
+        font-size: 6.48vw;
+        margin-bottom: 3.97vw;
+      }
+    }
+    .mixedSecText {
+      width: 100%;
+      padding-left: 0;
+      .mixedItemCont-text {
+        font-size: 3.73vw;
+      }
+      .mixedItemCont-text.big-size {
+        font-size: 4.2vw;
+      }
+      .mixedItemTitle {
+        margin-bottom: 2.83vw;
+        .mixedItemTitle-title {
+          font-size: 5.18vw;
+        }
+      }
+      .mixedItemCont-text {
+        font-size: 3.73vw;
+      }
+    }
   }
 }
