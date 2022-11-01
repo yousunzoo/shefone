@@ -509,6 +509,23 @@
       }
     }
   }
+  // 사이트맵
+  #sitemap {
+    .menu-wrapper > .menu-item {
+      > a {
+        font-size: 2.08vw;
+      }
+      > .sub-menu {
+        margin-top: 1.04vw;
+        > .menu-item {
+          margin-top: 0.52vw;
+          > a {
+            font-size: 1.25vw;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
@@ -991,6 +1008,23 @@
     .processOrg {
       .organization-list.it-Height {
         min-height: 11.13vw;
+      }
+    }
+  }
+  // 사이트맵
+  #sitemap {
+    .menu-wrapper > .menu-item {
+      > a {
+        font-size: 3.07vw;
+      }
+      > .sub-menu {
+        margin-top: 2.04vw;
+        > .menu-item {
+          margin-top: 0.92vw;
+          > a {
+            font-size: 2.2vw;
+          }
+        }
       }
     }
   }
@@ -1522,6 +1556,29 @@
     .processOrg {
       .organization-list.it-Height {
         min-height: 0;
+      }
+    }
+  }
+  // 사이트맵
+  #sitemap {
+    .menu-wrapper > .menu-item {
+      width: 50%;
+      padding: 7vw 2vw;
+      &:nth-child(odd) {
+        clear: both;
+      }
+      > a {
+        font-size: 6.07vw;
+      }
+      > .sub-menu {
+        margin-top: 3.6vw;
+        > .menu-item {
+          margin-top: 0;
+          > a {
+            font-size: 2.2vw;
+            font-size: 4.28vw;
+          }
+        }
       }
     }
   }

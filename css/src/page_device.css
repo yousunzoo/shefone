@@ -460,6 +460,18 @@
   .processAtc .processOrg .organization-list.it-Height {
     min-height: 8.13vw;
   }
+  #sitemap .menu-wrapper > .menu-item > a {
+    font-size: 2.08vw;
+  }
+  #sitemap .menu-wrapper > .menu-item > .sub-menu {
+    margin-top: 1.04vw;
+  }
+  #sitemap .menu-wrapper > .menu-item > .sub-menu > .menu-item {
+    margin-top: 0.52vw;
+  }
+  #sitemap .menu-wrapper > .menu-item > .sub-menu > .menu-item > a {
+    font-size: 1.25vw;
+  }
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .pageHeaderTitle {
@@ -898,6 +910,18 @@
   }
   .processAtc .processOrg .organization-list.it-Height {
     min-height: 11.13vw;
+  }
+  #sitemap .menu-wrapper > .menu-item > a {
+    font-size: 3.07vw;
+  }
+  #sitemap .menu-wrapper > .menu-item > .sub-menu {
+    margin-top: 2.04vw;
+  }
+  #sitemap .menu-wrapper > .menu-item > .sub-menu > .menu-item {
+    margin-top: 0.92vw;
+  }
+  #sitemap .menu-wrapper > .menu-item > .sub-menu > .menu-item > a {
+    font-size: 2.2vw;
   }
 }
 @media screen and (max-width: 767px) and (min-width: 1px) {
@@ -1387,5 +1411,25 @@
   }
   .processAtc .processOrg .organization-list.it-Height {
     min-height: 0;
+  }
+  #sitemap .menu-wrapper > .menu-item {
+    width: 50%;
+    padding: 7vw 2vw;
+  }
+  #sitemap .menu-wrapper > .menu-item:nth-child(odd) {
+    clear: both;
+  }
+  #sitemap .menu-wrapper > .menu-item > a {
+    font-size: 6.07vw;
+  }
+  #sitemap .menu-wrapper > .menu-item > .sub-menu {
+    margin-top: 3.6vw;
+  }
+  #sitemap .menu-wrapper > .menu-item > .sub-menu > .menu-item {
+    margin-top: 0;
+  }
+  #sitemap .menu-wrapper > .menu-item > .sub-menu > .menu-item > a {
+    font-size: 2.2vw;
+    font-size: 4.28vw;
   }
 }/*# sourceMappingURL=page_device.css.map */
