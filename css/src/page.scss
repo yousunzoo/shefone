@@ -270,6 +270,106 @@
     }
   }
 }
+// 회사 역사 페이지
+.pageFrontTitle {
+  text-align: center;
+  margin-bottom: 150px;
+  font-size: 110px;
+  line-height: 1.2em;
+  color: #000;
+  font-weight: bold;
+}
+.history {
+  padding: 60px 0 120px;
+  position: relative;
+  &::before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: #000;
+  }
+  .historyItem {
+    margin-top: 130px;
+    &:first-child {
+      margin-top: 0;
+    }
+    .historyItemTitle {
+      float: left;
+      width: 50%;
+      padding-left: 380px;
+      font-size: 0;
+      line-height: 0;
+      position: relative;
+      &::before {
+        content: "";
+        width: 162px;
+        height: 1px;
+        background-color: #000;
+        position: absolute;
+        top: 50%;
+        right: 0;
+      }
+      &::after {
+        content: "";
+        width: 13px;
+        height: 13px;
+        background-image: url("../../sources/about/about-us/ico_radius_history.svg");
+        background-size: 13px 13px;
+        position: absolute;
+        top: 50%;
+        right: -6px;
+        transform: translateY(-50%);
+        z-index: 5;
+      }
+      .historyItemTitle-title {
+        font-size: 80px;
+        line-height: 1.2em;
+        color: #000;
+        font-weight: bold;
+        display: inline-block;
+        position: relative;
+        background-color: #fff;
+      }
+    }
+    .historyItemCont {
+      overflow: hidden;
+      padding-left: 50px;
+      .historyItemCont-list {
+        padding-top: 34px;
+        .historyItemCont-item {
+          margin-top: 10px;
+          &:first-child {
+            margin-top: 0;
+          }
+          .historyItemContText {
+            &::after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            .historyItemConText-year {
+              float: left;
+              margin-right: 13px;
+              font-size: 20px;
+              line-height: 1.4em;
+              color: #000;
+              font-weight: bold;
+            }
+            .historyItemContText-text {
+              overflow: hidden;
+              font-size: 18px;
+              line-height: 1.6em;
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 // 자료실 페이지
 .newsPost {

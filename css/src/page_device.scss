@@ -226,6 +226,50 @@
       }
     }
   }
+  // 회사 역사 페이지
+  .pageFrontTitle {
+    margin-bottom: 7.81vw;
+    font-size: 5.73vw;
+  }
+  .history {
+    padding: 3.13vw 0 6.25vw;
+    .historyItem {
+      margin-top: 6.77vw;
+      .historyItemTitle {
+        padding-left: 19.79vw;
+        &::before {
+          width: 8.44vw;
+        }
+        &::after {
+          width: 0.68vw;
+          height: 0.68vw;
+          background-size: 0.68vw 0.68vw;
+          right: -0.31vw;
+        }
+        .historyItemTitle-title {
+          font-size: 4.17vw;
+        }
+      }
+      .historyItemCont {
+        padding-left: 2.6vw;
+        .historyItemCont-list {
+          padding-top: 1.77vw;
+          .historyItemCont-item {
+            margin-top: 0.52vw;
+            .historyItemContText {
+              .historyItemConText-year {
+                margin-right: 0.68vw;
+                font-size: 1.04vw;
+              }
+              .historyItemContText-text {
+                font-size: 0.94vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
@@ -418,6 +462,50 @@
       }
     }
   }
+  // 회사 역사 페이지
+  .pageFrontTitle {
+    margin-bottom: 9.81vw;
+    font-size: 8.73vw;
+  }
+  .history {
+    padding: 4.13vw 0 7.25vw;
+    .historyItem {
+      margin-top: 8.77vw;
+      .historyItemTitle {
+        padding-left: 19.79vw;
+        &::before {
+          width: 8.44vw;
+        }
+        &::after {
+          width: 1vw;
+          height: 1vw;
+          background-size: 1vw 1vw;
+          right: -0.5vw;
+        }
+        .historyItemTitle-title {
+          font-size: 4.67vw;
+        }
+      }
+      .historyItemCont {
+        padding-left: 2.6vw;
+        .historyItemCont-list {
+          padding-top: 1.77vw;
+          .historyItemCont-item {
+            margin-top: 1.21vw;
+            .historyItemContText {
+              .historyItemConText-year {
+                margin-right: 1.2vw;
+                font-size: 1.55vw;
+              }
+              .historyItemContText-text {
+                font-size: 1.39vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 767px) and (min-width: 1px) {
@@ -558,7 +646,8 @@
         }
       }
     }
-  } // 회사 소개 페이지
+  }
+  // 회사 소개 페이지
   .categoryTab {
     margin-bottom: 11.17vw;
     position: relative;
@@ -641,6 +730,60 @@
         .aboutListItem-text {
           font-size: 3.72vw;
           margin-top: 3.15vw;
+        }
+      }
+    }
+  }
+  // 회사 역사 페이지
+  .pageFrontTitle {
+    margin-bottom: 12.81vw;
+    font-size: 13.73vw;
+  }
+  .history {
+    padding: 8.13vw 0 11.25vw;
+    padding-left: 7vw;
+    &::before {
+      left: 0;
+    }
+    .historyItem {
+      margin-top: 18.77vw;
+      .historyItemTitle {
+        padding-left: 0;
+        width: 100%;
+        float: none;
+        &::before {
+          width: 5vw;
+          right: auto;
+          left: -7vw;
+          margin-top: -1px;
+        }
+        &::after {
+          width: 3vw;
+          height: 3vw;
+          background-size: 3vw 3vw;
+          right: auto;
+          left: -8.5vw;
+        }
+        .historyItemTitle-title {
+          font-size: 9.87vw;
+        }
+      }
+      .historyItemCont {
+        padding-left: 0;
+        .historyItemCont-list {
+          padding-top: 4.77vw;
+          .historyItemCont-item {
+            margin-top: 2.51vw;
+            .historyItemContText {
+              .historyItemConText-year {
+                margin-right: 3.2vw;
+                font-size: 4.3vw;
+              }
+              .historyItemContText-text {
+                font-size: 3.69vw;
+              }
+            }
+          }
         }
       }
     }

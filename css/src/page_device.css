@@ -212,6 +212,47 @@
     font-size: 1.04vw;
     margin-top: 1.51vw;
   }
+  .pageFrontTitle {
+    margin-bottom: 7.81vw;
+    font-size: 5.73vw;
+  }
+  .history {
+    padding: 3.13vw 0 6.25vw;
+  }
+  .history .historyItem {
+    margin-top: 6.77vw;
+  }
+  .history .historyItem .historyItemTitle {
+    padding-left: 19.79vw;
+  }
+  .history .historyItem .historyItemTitle::before {
+    width: 8.44vw;
+  }
+  .history .historyItem .historyItemTitle::after {
+    width: 0.68vw;
+    height: 0.68vw;
+    background-size: 0.68vw 0.68vw;
+    right: -0.31vw;
+  }
+  .history .historyItem .historyItemTitle .historyItemTitle-title {
+    font-size: 4.17vw;
+  }
+  .history .historyItem .historyItemCont {
+    padding-left: 2.6vw;
+  }
+  .history .historyItem .historyItemCont .historyItemCont-list {
+    padding-top: 1.77vw;
+  }
+  .history .historyItem .historyItemCont .historyItemCont-list .historyItemCont-item {
+    margin-top: 0.52vw;
+  }
+  .history .historyItem .historyItemCont .historyItemCont-list .historyItemCont-item .historyItemContText .historyItemConText-year {
+    margin-right: 0.68vw;
+    font-size: 1.04vw;
+  }
+  .history .historyItem .historyItemCont .historyItemCont-list .historyItemCont-item .historyItemContText .historyItemContText-text {
+    font-size: 0.94vw;
+  }
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .pageHeaderTitle {
@@ -389,6 +430,47 @@
   .aboutList .aboutList-list .aboutList-item .aboutListItem-text {
     font-size: 1.52vw;
     margin-top: 1.51vw;
+  }
+  .pageFrontTitle {
+    margin-bottom: 9.81vw;
+    font-size: 8.73vw;
+  }
+  .history {
+    padding: 4.13vw 0 7.25vw;
+  }
+  .history .historyItem {
+    margin-top: 8.77vw;
+  }
+  .history .historyItem .historyItemTitle {
+    padding-left: 19.79vw;
+  }
+  .history .historyItem .historyItemTitle::before {
+    width: 8.44vw;
+  }
+  .history .historyItem .historyItemTitle::after {
+    width: 1vw;
+    height: 1vw;
+    background-size: 1vw 1vw;
+    right: -0.5vw;
+  }
+  .history .historyItem .historyItemTitle .historyItemTitle-title {
+    font-size: 4.67vw;
+  }
+  .history .historyItem .historyItemCont {
+    padding-left: 2.6vw;
+  }
+  .history .historyItem .historyItemCont .historyItemCont-list {
+    padding-top: 1.77vw;
+  }
+  .history .historyItem .historyItemCont .historyItemCont-list .historyItemCont-item {
+    margin-top: 1.21vw;
+  }
+  .history .historyItem .historyItemCont .historyItemCont-list .historyItemCont-item .historyItemContText .historyItemConText-year {
+    margin-right: 1.2vw;
+    font-size: 1.55vw;
+  }
+  .history .historyItem .historyItemCont .historyItemCont-list .historyItemCont-item .historyItemContText .historyItemContText-text {
+    font-size: 1.39vw;
   }
 }
 @media screen and (max-width: 767px) and (min-width: 1px) {
@@ -603,5 +685,56 @@
   .aboutList .aboutList-list .aboutList-item .aboutListItem-text {
     font-size: 3.72vw;
     margin-top: 3.15vw;
+  }
+  .pageFrontTitle {
+    margin-bottom: 12.81vw;
+    font-size: 13.73vw;
+  }
+  .history {
+    padding: 8.13vw 0 11.25vw;
+    padding-left: 7vw;
+  }
+  .history::before {
+    left: 0;
+  }
+  .history .historyItem {
+    margin-top: 18.77vw;
+  }
+  .history .historyItem .historyItemTitle {
+    padding-left: 0;
+    width: 100%;
+    float: none;
+  }
+  .history .historyItem .historyItemTitle::before {
+    width: 5vw;
+    right: auto;
+    left: -7vw;
+    margin-top: -1px;
+  }
+  .history .historyItem .historyItemTitle::after {
+    width: 3vw;
+    height: 3vw;
+    background-size: 3vw 3vw;
+    right: auto;
+    left: -8.5vw;
+  }
+  .history .historyItem .historyItemTitle .historyItemTitle-title {
+    font-size: 9.87vw;
+  }
+  .history .historyItem .historyItemCont {
+    padding-left: 0;
+  }
+  .history .historyItem .historyItemCont .historyItemCont-list {
+    padding-top: 4.77vw;
+  }
+  .history .historyItem .historyItemCont .historyItemCont-list .historyItemCont-item {
+    margin-top: 2.51vw;
+  }
+  .history .historyItem .historyItemCont .historyItemCont-list .historyItemCont-item .historyItemContText .historyItemConText-year {
+    margin-right: 3.2vw;
+    font-size: 4.3vw;
+  }
+  .history .historyItem .historyItemCont .historyItemCont-list .historyItemCont-item .historyItemContText .historyItemContText-text {
+    font-size: 3.69vw;
   }
 }/*# sourceMappingURL=page_device.css.map */
