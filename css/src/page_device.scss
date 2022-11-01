@@ -1,0 +1,245 @@
+@media screen and (max-width: 1920px) and (min-width: 1025px) {
+  .pageHeaderTitle {
+    margin-bottom: 4.43vw;
+    .pageHeaderTitle-parent {
+      font-size: 1.88vw;
+      margin-bottom: 0.94vw;
+    }
+    .pageHeaderTitle-title {
+      font-size: 3.65vw;
+    }
+  }
+  .siteCont {
+    .onlyBanner {
+      margin-bottom: 5.21vw;
+      height: 25vw;
+    }
+    .bgTitleLogo {
+      height: 10.68vw;
+      margin-bottom: 5.73vw;
+      .bgTitleLogo-img {
+        width: 65.63vw;
+      }
+    }
+    .brandHeader {
+      margin-bottom: 5.73vw;
+      .brandHeader-title {
+        font-size: 3.13vw;
+        margin-bottom: 3.54vw;
+      }
+      .brandHeader-sub {
+        font-size: 2.08vw;
+        margin-bottom: 1.46vw;
+      }
+      .brandHeader-text {
+        font-size: 1.25vw;
+      }
+    }
+    .brandLogoPostThumb {
+      width: 40.94vw;
+    }
+    .brandLogoPostCont {
+      padding-left: 3.13vw;
+      .brandLogoPostCont-title {
+        font-size: 2.08vw;
+      }
+      .brandLogoPostCont-text {
+        margin-top: 1.56vw;
+        font-size: 1.04vw;
+      }
+    }
+  }
+  .pageTopBanner {
+    height: 22.4vw;
+    margin-bottom: 5.21vw;
+    .pageTopBannerText {
+      bottom: 4.17vw;
+      left: 4.17vw;
+      .pageTopBannerText-title {
+        font-size: 3.13vw;
+      }
+      .pageTopBannerText-text {
+        font-size: 1.25vw;
+        margin-top: 1.3vw;
+      }
+    }
+  }
+  .pageTable-tbl {
+    thead th {
+      font-size: 1.2vw;
+      padding: 1.09vw 0.52vw;
+    }
+    tbody th,
+    tbody td {
+      font-size: 1.04vw;
+      padding: 1.09vw 0.52vw;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .pageHeaderTitle {
+    margin-bottom: 5.17vw;
+    .pageHeaderTitle-parent {
+      font-size: 3.52vw;
+      margin-bottom: 1.76vw;
+    }
+    .pageHeaderTitle-title {
+      font-size: 5.95vw;
+    }
+  }
+  .siteCont {
+    .onlyBanner {
+      margin-bottom: 8.21vw;
+      height: 25vw;
+    }
+    .bgTitleLogo {
+      height: 10.68vw;
+      margin-bottom: 8.73vw;
+      .bgTitleLogo-img {
+        width: 65.63vw;
+      }
+    }
+    .brandHeader {
+      margin-bottom: 8.73vw;
+      .brandHeader-title {
+        font-size: 4.43vw;
+        margin-bottom: 4.94vw;
+      }
+      .brandHeader-sub {
+        font-size: 3.43vw;
+        margin-bottom: 2.5vw;
+      }
+      .brandHeader-text {
+        font-size: 2.05vw;
+      }
+    }
+    .brandLogoPostThumb {
+      width: 40.94vw;
+    }
+    .brandLogoPostCont {
+      padding-left: 4.13vw;
+      .brandLogoPostCont-title {
+        font-size: 3.43vw;
+      }
+      .brandLogoPostCont-text {
+        margin-top: 1.56vw;
+        font-size: 1.8vw;
+      }
+    }
+  }
+
+  .pageTopBanner {
+    height: 27.4vw;
+    margin-bottom: 6.51vw;
+    .pageTopBannerText {
+      bottom: 4.17vw;
+      left: 4.17vw;
+      .pageTopBannerText-title {
+        font-size: 4.43vw;
+      }
+      .pageTopBannerText-text {
+        font-size: 1.72vw;
+        margin-top: 1.3vw;
+      }
+    }
+  }
+  .pageTable-tbl {
+    thead th {
+      font-size: 1.8vw;
+      padding: 1.59vw 0.52vw;
+      border-bottom: solid 2px #000000;
+    }
+    tbody th,
+    tbody td {
+      font-size: 1.46vw;
+      padding: 1.59vw 0.52vw;
+    }
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 1px) {
+  .pageHeaderTitle {
+    margin-bottom: 8.17vw;
+    .pageHeaderTitle-parent {
+      font-size: 6.69vw;
+      margin-bottom: 2.09vw;
+    }
+    .pageHeaderTitle-title {
+      font-size: 9.95vw;
+    }
+  }
+  .siteCont {
+    .onlyBanner {
+      margin-bottom: 12.21vw;
+      height: 30vw;
+    }
+    .bgTitleLogo {
+      height: 12.68vw;
+      margin-bottom: 12.73vw;
+      .bgTitleLogo-img {
+        width: 75.63vw;
+      }
+    }
+    .brandHeader {
+      margin-bottom: 16.73vw;
+      .brandHeader-title {
+        font-size: 7.29vw;
+        margin-bottom: 8.94vw;
+      }
+      .brandHeader-sub {
+        font-size: 5.93vw;
+        margin-bottom: 4.5vw;
+      }
+      .brandHeader-text {
+        font-size: 4.05vw;
+      }
+    }
+    .brandLogoPostThumb {
+      display: block;
+      width: 100%;
+      margin-bottom: 7vw;
+    }
+    .brandLogoPostCont {
+      padding-left: 0;
+      display: block;
+      .brandLogoPostCont-title {
+        font-size: 5.93vw;
+      }
+      .brandLogoPostCont-text {
+        margin-top: 3.06vw;
+        font-size: 3.85vw;
+      }
+    }
+  }
+  .pageTopBanner {
+    height: 52vw;
+    margin-bottom: 18.51vw;
+    margin-left: -6.25vw;
+    margin-right: -6.25vw;
+    .pageTopBannerText {
+      bottom: 6.25vw;
+      left: 6.25vw;
+      width: auto;
+      right: 6.25vw;
+      .pageTopBannerText-title {
+        font-size: 7.29vw;
+      }
+      .pageTopBannerText-text {
+        font-size: 3.72vw;
+        margin-top: 2.7vw;
+      }
+    }
+  }
+  .pageTable-tbl {
+    thead th {
+      font-size: 3.9vw;
+      padding: 3.59vw 1.52vw;
+      border-bottom: solid 2px #000000;
+    }
+    tbody th,
+    tbody td {
+      font-size: 3.57vw;
+      padding: 3.59vw 1.52vw;
+    }
+  }
+}
