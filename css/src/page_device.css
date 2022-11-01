@@ -333,6 +333,133 @@
   .mixedSec .mixedSecText .mixedItemCont-text {
     font-size: 1.04vw;
   }
+  .solutionService .solutionService-inner {
+    padding: 4.43vw 5.52vw;
+  }
+  .solutionService .solutionService-inner .solutionServiceImg {
+    width: 37.5%;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item {
+    min-height: 8.7vw;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item:first-child {
+    top: 4.43vw;
+    left: 5.52vw;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item:nth-child(2) {
+    top: 4.43vw;
+    right: 5.52vw;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item:nth-child(3) {
+    bottom: 4.43vw;
+    left: 2.52vw;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item:last-child {
+    bottom: 4.43vw;
+    right: 5.52vw;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item .solutionItem .solutionItem-tit {
+    font-size: 1.46vw;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item .solutionItem .solutionItem-cont {
+    margin-top: 0.52vw;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item .solutionItem .solutionItem-cont .solutionItem-txt {
+    margin-top: 0.52vw;
+    padding-left: 0.63vw;
+    font-size: 1.04vw;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item .solutionItem .solutionItem-cont .solutionItem-txt::before {
+    font-size: 1.04vw;
+  }
+  .solutionProcess {
+    margin-top: 7.81vw;
+    padding-right: 7.55vw;
+  }
+  .solutionProcess .solutionProcessHeader {
+    margin-bottom: 5.21vw;
+  }
+  .solutionProcess .solutionProcessHeader .solutionProcessHeader-tit {
+    font-size: 3.13vw;
+  }
+  .solutionProcess .solutionProcessHeader .solutionProcessHeader-txt {
+    margin-top: 0.52vw;
+    font-size: 2.08vw;
+  }
+  .solutionProcess .solutionProcessContImg {
+    margin-top: 5.21vw;
+  }
+  .solutionProcess .solutionProcessContStep-item {
+    width: 14.28%;
+    padding-right: 2.08vw;
+  }
+  .solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemStep {
+    width: 3.91vw;
+    height: 3.91vw;
+  }
+  .solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemStep .solutionItemStep-inner .solutionItemStep-txt {
+    font-size: 0.73vw;
+  }
+  .solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemStep .solutionItemStep-inner .solutionItemStep-num {
+    font-size: 0.83vw;
+  }
+  .solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemCont {
+    margin-top: 2.08vw;
+  }
+  .solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemCont .solutionItemCont-tit {
+    margin-bottom: 0.94vw;
+    font-size: 1.15vw;
+  }
+  .solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemCont .solutionItemCont-txt {
+    font-size: 0.94vw;
+  }
+  .pageSubTab {
+    margin-top: 7.29vw;
+    margin-bottom: 5.21vw;
+  }
+  .pageSubTab .pageSubTab-list .pageSubTab-item {
+    width: 15.63vw;
+  }
+  .pageSubTab .pageSubTab-list .pageSubTab-item .pageSubTab-link {
+    font-size: 1.04vw;
+    padding: 0.83vw 1.04vw;
+  }
+  .processAtc .processAtc-title {
+    font-size: 2.08vw;
+    margin-bottom: 5.21vw;
+  }
+  .processAtc .processAtcList {
+    margin-bottom: 5.21vw;
+    max-width: 63.65vw;
+  }
+  .processAtc .processAtcList .processAtcList-list {
+    margin: -1.3vw -2.08vw;
+  }
+  .processAtc .processAtcList .processAtcList-list .processAtcList-item {
+    padding: 1.3vw 2.08vw;
+  }
+  .processAtc .processAtcList .processAtcList-list .processAtcList-item .processListItem {
+    padding: 1.56vw 0 1.82vw;
+  }
+  .processAtc .processAtcList .processAtcList-list .processAtcList-item .processListItem .processListItem-step {
+    font-size: 0.94vw;
+    margin-bottom: 0.42vw;
+  }
+  .processAtc .processAtcList .processAtcList-list .processAtcList-item .processListItem .processListItem-text {
+    font-size: 1.25vw;
+  }
+  .processAtc .processAtcList .processAtcList-list .processAtcList-item::after {
+    width: 0.52vw;
+    height: 1.04vw;
+    background-size: 0.52vw 1.04vw;
+    right: -0.26vw;
+  }
+  .processAtc .processOrg .organization-text {
+    margin-top: 5px;
+  }
+  .processAtc .processOrg .organization-list.it-Height {
+    min-height: 8.13vw;
+  }
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .pageHeaderTitle {
@@ -635,6 +762,142 @@
   }
   .mixedSec .mixedSecText .mixedItemCont-text {
     font-size: 1.82vw;
+  }
+  .solutionService .solutionService-inner {
+    padding: 10.3vw 2.35vw;
+  }
+  .solutionService .solutionService-inner .solutionServiceImg {
+    width: 27.5%;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item {
+    width: 33%;
+    min-height: 11.31vw;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item:first-child {
+    top: 4.43vw;
+    left: 2.52vw;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item:nth-child(2) {
+    top: 4.43vw;
+    right: 2.52vw;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item:nth-child(3) {
+    bottom: 4.43vw;
+    left: 2.52vw;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item:last-child {
+    bottom: 4.43vw;
+    right: 2.52vw;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item .solutionItem .solutionItem-tit {
+    font-size: 2vw;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item .solutionItem .solutionItem-cont {
+    margin-top: 0.98vw;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item .solutionItem .solutionItem-cont .solutionItem-txt {
+    margin-top: 0.66vw;
+    padding-left: 1.17vw;
+    font-size: 1.53vw;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item .solutionItem .solutionItem-cont .solutionItem-txt::before {
+    font-size: 1.95vw;
+  }
+  .solutionProcess {
+    margin-top: 14.65vw;
+    padding-right: 0;
+  }
+  .solutionProcess .solutionProcessHeader {
+    margin-bottom: 9.77vw;
+  }
+  .solutionProcess .solutionProcessHeader .solutionProcessHeader-tit {
+    font-size: 5.86vw;
+  }
+  .solutionProcess .solutionProcessHeader .solutionProcessHeader-txt {
+    margin-top: 0.98vw;
+    font-size: 3.91vw;
+  }
+  .solutionProcess .solutionProcessContStep-item {
+    width: 25%;
+    padding: 2vw 0;
+    padding-right: 3.91vw;
+  }
+  .solutionProcess .solutionProcessContStep-item:nth-child(5) {
+    clear: both;
+  }
+  .solutionProcess .solutionProcessContStep-item .solutionProcessContImg {
+    margin-top: 9.77vw;
+  }
+  .solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemStep {
+    width: 7.32vw;
+    height: 7.32vw;
+  }
+  .solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemStep .solutionItemStep-inner .solutionItemStep-txt {
+    font-size: 1.37vw;
+  }
+  .solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemStep .solutionItemStep-inner .solutionItemStep-num {
+    font-size: 1.56vw;
+  }
+  .solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemCont {
+    margin-top: 2.08vw;
+  }
+  .solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemCont .solutionItemCont-tit {
+    margin-bottom: 1.76vw;
+    font-size: 2.15vw;
+  }
+  .solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemCont .solutionItemCont-txt {
+    font-size: 1.76vw;
+  }
+  .pageSubTab {
+    margin-top: 8.29vw;
+    margin-bottom: 6.21vw;
+  }
+  .pageSubTab .pageSubTab-list .pageSubTab-item {
+    width: 20.63vw;
+  }
+  .pageSubTab .pageSubTab-list .pageSubTab-item .pageSubTab-link {
+    font-size: 1.74vw;
+    padding: 1.28vw 1.04vw;
+  }
+  .processAtc .processAtc-title {
+    font-size: 4.18vw;
+    margin-bottom: 6.21vw;
+  }
+  .processAtc .processAtcList {
+    margin-bottom: 8.21vw;
+    max-width: 100%;
+  }
+  .processAtc .processAtcList .processAtcList-list {
+    margin: -1.73vw -3.08vw;
+  }
+  .processAtc .processAtcList .processAtcList-list .processAtcList-item {
+    padding: 1.73vw 3.08vw;
+    width: 25%;
+  }
+  .processAtc .processAtcList .processAtcList-list .processAtcList-item:nth-child(4n+1) {
+    clear: both !important;
+  }
+  .processAtc .processAtcList .processAtcList-list .processAtcList-item .processListItem {
+    padding: 2.3vw 0 2.42vw;
+  }
+  .processAtc .processAtcList .processAtcList-list .processAtcList-item .processListItem .processListItem-step {
+    font-size: 1.79vw;
+    margin-bottom: 0.84vw;
+  }
+  .processAtc .processAtcList .processAtcList-list .processAtcList-item .processListItem .processListItem-text {
+    font-size: 2.25vw;
+  }
+  .processAtc .processAtcList .processAtcList-list .processAtcList-item::after {
+    width: 0.77vw;
+    height: 1.54vw;
+    background-size: 0.77vw 1.54vw;
+    right: -0.26vw;
+  }
+  .processAtc .processAtcList .processAtcList-list .processAtcList-item:nth-child(5)::after {
+    display: block;
+  }
+  .processAtc .processOrg .organization-list.it-Height {
+    min-height: 11.13vw;
   }
 }
 @media screen and (max-width: 767px) and (min-width: 1px) {
@@ -984,5 +1247,145 @@
   }
   .mixedSec .mixedSecText .mixedItemCont-text {
     font-size: 3.73vw;
+  }
+  .solutionService .solutionService-inner {
+    border: none;
+    padding: 6vw 6.25vw 7vw;
+  }
+  .solutionService .solutionService-inner .solutionServiceImg {
+    display: none;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont {
+    position: static;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-title {
+    display: block;
+    margin-bottom: 4vw;
+    color: #000;
+    font-size: 6vw;
+    line-height: 1.6em;
+    font-weight: bold;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item {
+    position: static;
+    width: 100%;
+    min-height: auto;
+    padding-bottom: 6vw;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item .solutionItem .solutionItem-tit {
+    font-size: 4vw;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item .solutionItem .solutionItem-cont {
+    margin-top: 1.67vw;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item .solutionItem .solutionItem-cont .solutionItem-txt {
+    margin-top: 1vw;
+    padding-left: 3.2vw;
+    font-size: 3.75vw;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item .solutionItem .solutionItem-cont .solutionItem-txt:first-child {
+    margin-top: 0;
+  }
+  .solutionService .solutionService-inner .solutionServiceCont .solutionServiceCont-item .solutionItem .solutionItem-cont .solutionItem-txt::before {
+    font-size: 3.75vw;
+  }
+  .solutionProcess {
+    margin-top: 14vw;
+    padding-right: 0;
+  }
+  .solutionProcess .solutionProcessHeader {
+    margin-bottom: 8.67vw;
+  }
+  .solutionProcess .solutionProcessHeader .solutionProcessHeader-tit {
+    font-size: 7.95vw;
+  }
+  .solutionProcess .solutionProcessHeader .solutionProcessHeader-txt {
+    margin-top: 1.67vw;
+    font-size: 5.46vw;
+  }
+  .solutionProcess .solutionProcessContImg {
+    margin-top: 10vw;
+  }
+  .solutionProcess .solutionProcessContStep-item {
+    width: 50%;
+    padding: 5vw 0;
+    padding-right: 6vw;
+  }
+  .solutionProcess .solutionProcessContStep-item:nth-child(odd) {
+    clear: both;
+  }
+  .solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemStep {
+    width: 17vw;
+    height: 17vw;
+  }
+  .solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemStep .solutionItemStep-inner .solutionItemStep-txt {
+    font-size: 3.33vw;
+  }
+  .solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemStep .solutionItemStep-inner .solutionItemStep-num {
+    font-size: 3.75vw;
+  }
+  .solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemCont {
+    margin-top: 5.67vw;
+  }
+  .solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemCont .solutionItemCont-tit {
+    margin-bottom: 3vw;
+    font-size: 5vw;
+  }
+  .solutionProcess .solutionProcessContStep-item .solutionItem .solutionItemCont .solutionItemCont-txt {
+    font-size: 3.75vw;
+  }
+  .pageSubTab {
+    margin-top: 16.29vw;
+    margin-bottom: 13.21vw;
+  }
+  .pageSubTab .pageSubTab-list .pageSubTab-item {
+    width: 100%;
+  }
+  .pageSubTab .pageSubTab-list .pageSubTab-item .pageSubTab-link {
+    font-size: 3.64vw;
+    padding: 3.28vw 1.04vw;
+  }
+  .pageSubTab .pageSubTab-list .pageSubTab-item .pageSubTab-link::after {
+    border: solid 1px #000;
+  }
+  .processAtc .processAtc-title {
+    font-size: 5.68vw;
+    margin-bottom: 10.21vw;
+  }
+  .processAtc .processAtcList {
+    margin-bottom: 16.21vw;
+    max-width: 100%;
+  }
+  .processAtc .processAtcList .processAtcList-list {
+    margin: -2.03vw -5.58vw;
+  }
+  .processAtc .processAtcList .processAtcList-list .processAtcList-item {
+    padding: 2.03vw 5.58vw;
+    width: 50%;
+  }
+  .processAtc .processAtcList .processAtcList-list .processAtcList-item:nth-child(odd) {
+    clear: both !important;
+  }
+  .processAtc .processAtcList .processAtcList-list .processAtcList-item .processListItem {
+    padding: 4.7vw 0 4.42vw;
+  }
+  .processAtc .processAtcList .processAtcList-list .processAtcList-item .processListItem .processListItem-step {
+    font-size: 3.79vw;
+    margin-bottom: 1.18vw;
+  }
+  .processAtc .processAtcList .processAtcList-list .processAtcList-item .processListItem .processListItem-text {
+    font-size: 4.5vw;
+  }
+  .processAtc .processAtcList .processAtcList-list .processAtcList-item::after {
+    width: 2.02vw;
+    height: 4.04vw;
+    background-size: 2.02vw 4.04vw;
+    right: -0.26vw;
+  }
+  .processAtc .processAtcList .processAtcList-list .processAtcList-item:nth-child(5)::after {
+    display: block;
+  }
+  .processAtc .processOrg .organization-list.it-Height {
+    min-height: 0;
   }
 }/*# sourceMappingURL=page_device.css.map */

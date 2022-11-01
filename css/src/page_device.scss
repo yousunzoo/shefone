@@ -363,6 +363,152 @@
       }
     }
   }
+
+  // 토탈솔루션 서비스
+  .solutionService {
+    .solutionService-inner {
+      padding: 4.43vw 5.52vw;
+      .solutionServiceImg {
+        width: 37.5%;
+      }
+      .solutionServiceCont {
+        .solutionServiceCont-item {
+          min-height: 8.7vw;
+          &:first-child {
+            top: 4.43vw;
+            left: 5.52vw;
+          }
+          &:nth-child(2) {
+            top: 4.43vw;
+            right: 5.52vw;
+          }
+          &:nth-child(3) {
+            bottom: 4.43vw;
+            left: 2.52vw;
+          }
+          &:last-child {
+            bottom: 4.43vw;
+            right: 5.52vw;
+          }
+          .solutionItem {
+            .solutionItem-tit {
+              font-size: 1.46vw;
+            }
+            .solutionItem-cont {
+              margin-top: 0.52vw;
+              .solutionItem-txt {
+                margin-top: 0.52vw;
+                padding-left: 0.63vw;
+                font-size: 1.04vw;
+                &::before {
+                  font-size: 1.04vw;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .solutionProcess {
+    margin-top: 7.81vw;
+    padding-right: 7.55vw;
+    .solutionProcessHeader {
+      margin-bottom: 5.21vw;
+      .solutionProcessHeader-tit {
+        font-size: 3.13vw;
+      }
+      .solutionProcessHeader-txt {
+        margin-top: 0.52vw;
+        font-size: 2.08vw;
+      }
+    }
+
+    .solutionProcessContImg {
+      margin-top: 5.21vw;
+    }
+    .solutionProcessContStep-item {
+      width: 14.28%;
+      padding-right: 2.08vw;
+      .solutionItem {
+        .solutionItemStep {
+          width: 3.91vw;
+          height: 3.91vw;
+          .solutionItemStep-inner {
+            .solutionItemStep-txt {
+              font-size: 0.73vw;
+            }
+            .solutionItemStep-num {
+              font-size: 0.83vw;
+            }
+          }
+        }
+        .solutionItemCont {
+          margin-top: 2.08vw;
+          .solutionItemCont-tit {
+            margin-bottom: 0.94vw;
+            font-size: 1.15vw;
+          }
+          .solutionItemCont-txt {
+            font-size: 0.94vw;
+          }
+        }
+      }
+    }
+  }
+  .pageSubTab {
+    margin-top: 7.29vw;
+    margin-bottom: 5.21vw;
+    .pageSubTab-list {
+      .pageSubTab-item {
+        width: 15.63vw;
+        .pageSubTab-link {
+          font-size: 1.04vw;
+          padding: 0.83vw 1.04vw;
+        }
+      }
+    }
+  }
+  .processAtc {
+    .processAtc-title {
+      font-size: 2.08vw;
+      margin-bottom: 5.21vw;
+    }
+    .processAtcList {
+      margin-bottom: 5.21vw;
+      max-width: 63.65vw;
+      .processAtcList-list {
+        margin: -1.3vw -2.08vw;
+        .processAtcList-item {
+          padding: 1.3vw 2.08vw;
+          .processListItem {
+            padding: 1.56vw 0 1.82vw;
+            .processListItem-step {
+              font-size: 0.94vw;
+              margin-bottom: 0.42vw;
+            }
+            .processListItem-text {
+              font-size: 1.25vw;
+            }
+          }
+          &::after {
+            width: 0.52vw;
+            height: 1.04vw;
+            background-size: 0.52vw 1.04vw;
+            right: -0.26vw;
+          }
+        }
+      }
+    }
+    .processOrg {
+      .organization-text {
+        margin-top: 5px;
+      }
+      .organization-list.it-Height {
+        min-height: 8.13vw;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
@@ -690,6 +836,161 @@
       }
       .mixedItemCont-text {
         font-size: 1.82vw;
+      }
+    }
+  }
+  // 토탈솔루션 서비스
+  .solutionService {
+    .solutionService-inner {
+      padding: 10.3vw 2.35vw;
+      .solutionServiceImg {
+        width: 27.5%;
+      }
+      .solutionServiceCont {
+        .solutionServiceCont-item {
+          width: 33%;
+          min-height: 11.31vw;
+          &:first-child {
+            top: 4.43vw;
+            left: 2.52vw;
+          }
+          &:nth-child(2) {
+            top: 4.43vw;
+            right: 2.52vw;
+          }
+          &:nth-child(3) {
+            bottom: 4.43vw;
+            left: 2.52vw;
+          }
+          &:last-child {
+            bottom: 4.43vw;
+            right: 2.52vw;
+          }
+          .solutionItem {
+            .solutionItem-tit {
+              font-size: 2vw;
+            }
+            .solutionItem-cont {
+              margin-top: 0.98vw;
+              .solutionItem-txt {
+                margin-top: 0.66vw;
+                padding-left: 1.17vw;
+                font-size: 1.53vw;
+                &::before {
+                  font-size: 1.95vw;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .solutionProcess {
+    margin-top: 14.65vw;
+    padding-right: 0;
+    .solutionProcessHeader {
+      margin-bottom: 9.77vw;
+      .solutionProcessHeader-tit {
+        font-size: 5.86vw;
+      }
+      .solutionProcessHeader-txt {
+        margin-top: 0.98vw;
+        font-size: 3.91vw;
+      }
+    }
+    .solutionProcessContStep-item {
+      width: 25%;
+      padding: 2vw 0;
+      padding-right: 3.91vw;
+      &:nth-child(5) {
+        clear: both;
+      }
+
+      .solutionProcessContImg {
+        margin-top: 9.77vw;
+      }
+      .solutionItem {
+        .solutionItemStep {
+          width: 7.32vw;
+          height: 7.32vw;
+          .solutionItemStep-inner {
+            .solutionItemStep-txt {
+              font-size: 1.37vw;
+            }
+            .solutionItemStep-num {
+              font-size: 1.56vw;
+            }
+          }
+        }
+        .solutionItemCont {
+          margin-top: 2.08vw;
+          .solutionItemCont-tit {
+            margin-bottom: 1.76vw;
+            font-size: 2.15vw;
+          }
+          .solutionItemCont-txt {
+            font-size: 1.76vw;
+          }
+        }
+      }
+    }
+  }
+  .pageSubTab {
+    margin-top: 8.29vw;
+    margin-bottom: 6.21vw;
+    .pageSubTab-list {
+      .pageSubTab-item {
+        width: 20.63vw;
+        .pageSubTab-link {
+          font-size: 1.74vw;
+          padding: 1.28vw 1.04vw;
+        }
+      }
+    }
+  }
+  .processAtc {
+    .processAtc-title {
+      font-size: 4.18vw;
+      margin-bottom: 6.21vw;
+    }
+    .processAtcList {
+      margin-bottom: 8.21vw;
+      max-width: 100%;
+      .processAtcList-list {
+        margin: -1.73vw -3.08vw;
+        .processAtcList-item {
+          padding: 1.73vw 3.08vw;
+          width: 25%;
+          &:nth-child(4n + 1) {
+            clear: both !important;
+          }
+          .processListItem {
+            padding: 2.3vw 0 2.42vw;
+            .processListItem-step {
+              font-size: 1.79vw;
+              margin-bottom: 0.84vw;
+            }
+            .processListItem-text {
+              font-size: 2.25vw;
+            }
+          }
+          &::after {
+            width: 0.77vw;
+            height: 1.54vw;
+            background-size: 0.77vw 1.54vw;
+            right: -0.26vw;
+          }
+
+          &:nth-child(5)::after {
+            display: block;
+          }
+        }
+      }
+    }
+    .processOrg {
+      .organization-list.it-Height {
+        min-height: 11.13vw;
       }
     }
   }
@@ -1064,6 +1365,163 @@
       }
       .mixedItemCont-text {
         font-size: 3.73vw;
+      }
+    }
+  }
+  // 토탈솔루션 서비스
+  .solutionService {
+    .solutionService-inner {
+      border: none;
+      padding: 6vw 6.25vw 7vw;
+      .solutionServiceImg {
+        display: none;
+      }
+      .solutionServiceCont {
+        position: static;
+        .solutionServiceCont-title {
+          display: block;
+          margin-bottom: 4vw;
+          color: #000;
+          font-size: 6vw;
+          line-height: 1.6em;
+          font-weight: bold;
+        }
+        .solutionServiceCont-item {
+          position: static;
+          width: 100%;
+          min-height: auto;
+          padding-bottom: 6vw;
+
+          .solutionItem {
+            .solutionItem-tit {
+              font-size: 4vw;
+            }
+            .solutionItem-cont {
+              margin-top: 1.67vw;
+              .solutionItem-txt {
+                margin-top: 1vw;
+                padding-left: 3.2vw;
+                font-size: 3.75vw;
+                &:first-child {
+                  margin-top: 0;
+                }
+                &::before {
+                  font-size: 3.75vw;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .solutionProcess {
+    margin-top: 14vw;
+    padding-right: 0;
+    .solutionProcessHeader {
+      margin-bottom: 8.67vw;
+      .solutionProcessHeader-tit {
+        font-size: 7.95vw;
+      }
+      .solutionProcessHeader-txt {
+        margin-top: 1.67vw;
+        font-size: 5.46vw;
+      }
+    }
+
+    .solutionProcessContImg {
+      margin-top: 10vw;
+    }
+    .solutionProcessContStep-item {
+      width: 50%;
+      padding: 5vw 0;
+      padding-right: 6vw;
+      &:nth-child(odd) {
+        clear: both;
+      }
+      .solutionItem {
+        .solutionItemStep {
+          width: 17vw;
+          height: 17vw;
+          .solutionItemStep-inner {
+            .solutionItemStep-txt {
+              font-size: 3.33vw;
+            }
+            .solutionItemStep-num {
+              font-size: 3.75vw;
+            }
+          }
+        }
+        .solutionItemCont {
+          margin-top: 5.67vw;
+          .solutionItemCont-tit {
+            margin-bottom: 3vw;
+            font-size: 5vw;
+          }
+          .solutionItemCont-txt {
+            font-size: 3.75vw;
+          }
+        }
+      }
+    }
+  }
+  .pageSubTab {
+    margin-top: 16.29vw;
+    margin-bottom: 13.21vw;
+    .pageSubTab-list {
+      .pageSubTab-item {
+        width: 100%;
+        .pageSubTab-link {
+          font-size: 3.64vw;
+          padding: 3.28vw 1.04vw;
+          &::after {
+            border: solid 1px #000;
+          }
+        }
+      }
+    }
+  }
+  .processAtc {
+    .processAtc-title {
+      font-size: 5.68vw;
+      margin-bottom: 10.21vw;
+    }
+    .processAtcList {
+      margin-bottom: 16.21vw;
+      max-width: 100%;
+      .processAtcList-list {
+        margin: -2.03vw -5.58vw;
+        .processAtcList-item {
+          padding: 2.03vw 5.58vw;
+          width: 50%;
+          &:nth-child(odd) {
+            clear: both !important;
+          }
+          .processListItem {
+            padding: 4.7vw 0 4.42vw;
+            .processListItem-step {
+              font-size: 3.79vw;
+              margin-bottom: 1.18vw;
+            }
+            .processListItem-text {
+              font-size: 4.5vw;
+            }
+          }
+          &::after {
+            width: 2.02vw;
+            height: 4.04vw;
+            background-size: 2.02vw 4.04vw;
+            right: -0.26vw;
+          }
+          &:nth-child(5)::after {
+            display: block;
+          }
+        }
+      }
+    }
+    .processOrg {
+      .organization-list.it-Height {
+        min-height: 0;
       }
     }
   }

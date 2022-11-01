@@ -852,6 +852,10 @@
       line-height: 1.4em;
     }
   }
+  .solutionProcessContImg {
+    margin-top: 100px;
+    line-height: 0;
+  }
   .solutionProcessContStep-list::after {
     content: "";
     display: block;
@@ -1004,6 +1008,9 @@
         vertical-align: top;
         padding: 25px 40px;
         position: relative;
+        &:nth-child(5n + 1) {
+          clear: both;
+        }
         .processListItem {
           border-top: solid 3px #000;
           border-bottom: solid 1px #000;
@@ -1047,6 +1054,9 @@
   .processOrg {
     .organization-text {
       margin-top: 5px;
+      &:last-child {
+        margin-top: 0;
+      }
     }
     .organization-list.it-Height {
       min-height: 156px;

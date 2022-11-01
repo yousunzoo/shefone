@@ -837,6 +837,10 @@
   font-weight: bold;
   line-height: 1.4em;
 }
+.solutionProcess .solutionProcessContImg {
+  margin-top: 100px;
+  line-height: 0;
+}
 .solutionProcess .solutionProcessContStep-list::after {
   content: "";
   display: block;
@@ -988,6 +992,9 @@
   padding: 25px 40px;
   position: relative;
 }
+.processAtc .processAtcList .processAtcList-list .processAtcList-item:nth-child(5n+1) {
+  clear: both;
+}
 .processAtc .processAtcList .processAtcList-list .processAtcList-item .processListItem {
   border-top: solid 3px #000;
   border-bottom: solid 1px #000;
@@ -1023,6 +1030,9 @@
 }
 .processAtc .processOrg .organization-text {
   margin-top: 5px;
+}
+.processAtc .processOrg .organization-text:last-child {
+  margin-top: 0;
 }
 .processAtc .processOrg .organization-list.it-Height {
   min-height: 156px;
