@@ -113,6 +113,165 @@
   }
 }
 
+// 회사 소개 페이지
+.categoryTab {
+  .categoryTab-select {
+    display: block;
+    border: solid 2px #000;
+    padding: 3.5vw 12vw 3vw 5vw;
+    font-size: 4.9vw;
+    font-weight: 500;
+    line-height: 1.4em;
+    color: #000;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: none;
+    &::after {
+      content: "";
+      width: 3vw;
+      height: 4vw;
+      background-image: url("../../sources/about/about-us/ico_family-arrow.svg");
+      background-size: 3vw 4vw;
+      position: absolute;
+      top: 50%;
+      right: 5vw;
+      transform: translateY(-50%);
+      margin-top: -0.1vw;
+    }
+  }
+}
+.aboutImgLogo {
+  line-height: 0;
+  text-align: center;
+  margin-bottom: 32px;
+  .aboutImgLogo-img {
+    display: block;
+    margin: 0 auto;
+    width: 541px;
+  }
+}
+.aboutBigTitle {
+  text-align: center;
+  font-size: 60px;
+  line-height: 1.4em;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 240px;
+}
+.aboutBanner {
+  position: relative;
+  height: 640px;
+  .aboutBannerBg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 101vw;
+    height: 100%;
+    overflow: hidden;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 100%
+      );
+      opacity: 0.8;
+    }
+    .aboutBannerBg-img {
+      display: block;
+      position: absolute;
+      top: -40%;
+      left: 0;
+      right: 0;
+      height: 150%;
+      background-image: url("../../sources/about/about-banner-min.png");
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+  .aboutBannerText {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    .aboutBannerText-title {
+      font-size: 60px;
+      line-height: 1.4em;
+      color: #fff;
+      font-weight: bold;
+    }
+    .aboutBannerText-text {
+      font-size: 24px;
+      line-height: 1.6em;
+      color: #fff;
+      font-weight: 500;
+      margin-top: 28px;
+    }
+  }
+}
+.aboutList {
+  margin-top: 100px;
+  .aboutList-list {
+    margin: 0 -28px;
+    overflow: hidden;
+    .aboutList-item {
+      padding: 0 28px;
+      width: 33.333%;
+      float: left;
+      .aboutListItem-ico::after {
+        width: 113px;
+        height: 90px;
+        background-size: 113px 90px;
+      }
+      &:nth-child(1) .aboutListItem-ico::after {
+        background-image: url("../../sources/about/about-us/ico_about1.svg");
+      }
+      &:nth-child(2) .aboutListItem-ico::after {
+        background-image: url("../../sources/about/about-us/ico_about2.svg");
+      }
+      &:nth-child(3) .aboutListItem-ico::after {
+        background-image: url("../../sources/about/about-us/ico_about3.svg");
+      }
+
+      .aboutListItem-ico {
+        width: 113px;
+        height: 93px;
+        position: relative;
+        margin-bottom: 55px;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+        }
+      }
+      .aboutListItem-title {
+        font-size: 36px;
+        line-height: 1.4em;
+        color: #000;
+        font-weight: bold;
+      }
+      .aboutListItem-text {
+        font-size: 20px;
+        line-height: 1.6em;
+        color: #000;
+        margin-top: 29px;
+      }
+    }
+  }
+}
+
+// 자료실 페이지
 .newsPost {
   margin-top: 65px;
   .newsPost-item {

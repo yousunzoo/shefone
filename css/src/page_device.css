@@ -1,3 +1,41 @@
+@media screen and (min-width: 768px) {
+  .categoryTab {
+    margin-bottom: 80px;
+    border-top: solid 1px #000000;
+    text-align: center;
+    font-size: 0;
+    line-height: 0;
+    white-space: nowrap;
+  }
+  .categoryTab-item {
+    display: inline-block;
+  }
+  .is-Current .categoryTab-link {
+    font-weight: bold;
+  }
+  .categoryTab-link {
+    display: block;
+    font-size: 24px;
+    line-height: 1.4em;
+    color: #000;
+    font-weight: 500;
+    padding: 34px 28px 0;
+    position: relative;
+  }
+  .categoryTab-link::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    opacity: 0;
+  }
+  .is-Current .categoryTab-link::after {
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 1920px) and (min-width: 1025px) {
   .pageHeaderTitle {
     margin-bottom: 4.43vw;
@@ -117,6 +155,62 @@
   .listPaging .listPaging-item.is-Current .listPaging-text::after {
     width: 1.5625vw;
     height: 1.5625vw;
+  }
+  .categoryTab {
+    margin-bottom: 4.17vw;
+  }
+  .categoryTab .categoryTab-link {
+    font-size: 1.25vw;
+    padding: 1.77vw 1.46vw 0;
+  }
+  .aboutImgLogo {
+    margin-bottom: 1.67vw;
+  }
+  .aboutImgLogo .aboutImgLogo-img {
+    width: 28.18vw;
+  }
+  .aboutBigTitle {
+    font-size: 3.13vw;
+    margin-bottom: 12.5vw;
+  }
+  .aboutBanner {
+    height: 33.33vw;
+  }
+  .aboutBanner .aboutBannerText {
+    bottom: 5.21vw;
+  }
+  .aboutBanner .aboutBannerText .aboutBannerText-title {
+    font-size: 3.13vw;
+  }
+  .aboutBanner .aboutBannerText .aboutBannerText-text {
+    font-size: 1.25vw;
+    margin-top: 1.46vw;
+  }
+  .aboutList {
+    margin-top: 5.21vw;
+  }
+  .aboutList .aboutList-list {
+    margin: 0 -1.46vw;
+  }
+  .aboutList .aboutList-list .aboutList-item {
+    padding: 0 1.46vw;
+  }
+  .aboutList .aboutList-list .aboutList-item .aboutListItem-ico::after {
+    width: 5.89vw;
+    height: 4.69vw;
+    background-size: 5.89vw 4.69vw;
+  }
+  .aboutList .aboutList-list .aboutList-item .aboutListItem-ico {
+    width: 5.89vw;
+    height: 4.84vw;
+    margin-bottom: 2.86vw;
+  }
+  .aboutList .aboutList-list .aboutList-item .aboutListItem-title {
+    font-size: 1.88vw;
+  }
+  .aboutList .aboutList-list .aboutList-item .aboutListItem-text {
+    font-size: 1.04vw;
+    margin-top: 1.51vw;
   }
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
@@ -239,6 +333,62 @@
   .listPaging .listPaging-item.is-Current .listPaging-text::after {
     width: 2.93vw;
     height: 2.93vw;
+  }
+  .categoryTab {
+    margin-bottom: 6.17vw;
+  }
+  .categoryTab .categoryTab-link {
+    font-size: 2.2vw;
+    padding: 2.47vw 1.86vw 0;
+  }
+  .aboutImgLogo {
+    margin-bottom: 2.67vw;
+  }
+  .aboutImgLogo .aboutImgLogo-img {
+    width: 34.18vw;
+  }
+  .aboutBigTitle {
+    font-size: 4.43vw;
+    margin-bottom: 13.5vw;
+  }
+  .aboutBanner {
+    height: 35.33vw;
+  }
+  .aboutBanner .aboutBannerText {
+    bottom: 5.21vw;
+  }
+  .aboutBanner .aboutBannerText .aboutBannerText-title {
+    font-size: 4.13vw;
+  }
+  .aboutBanner .aboutBannerText .aboutBannerText-text {
+    font-size: 1.5vw;
+    margin-top: 1.58vw;
+  }
+  .aboutList {
+    margin-top: 7.21vw;
+  }
+  .aboutList .aboutList-list {
+    margin: 0 -1.46vw;
+  }
+  .aboutList .aboutList-list .aboutList-item {
+    padding: 0 1.46vw;
+  }
+  .aboutList .aboutList-list .aboutList-item .aboutListItem-ico::after {
+    width: 5.89vw;
+    height: 4.69vw;
+    background-size: 5.89vw 4.69vw;
+  }
+  .aboutList .aboutList-list .aboutList-item .aboutListItem-ico {
+    width: 5.89vw;
+    height: 4.84vw;
+    margin-bottom: 2.86vw;
+  }
+  .aboutList .aboutList-list .aboutList-item .aboutListItem-title {
+    font-size: 2.29vw;
+  }
+  .aboutList .aboutList-list .aboutList-item .aboutListItem-text {
+    font-size: 1.52vw;
+    margin-top: 1.51vw;
   }
 }
 @media screen and (max-width: 767px) and (min-width: 1px) {
@@ -368,5 +518,90 @@
   .listPaging .listPaging-list .listPaging-item.is-Current .listPaging-text::after {
     width: 6.375vw;
     height: 6.375vw;
+  }
+  .categoryTab {
+    margin-bottom: 11.17vw;
+    position: relative;
+  }
+  .categoryTab .categoryTab-select {
+    display: block;
+  }
+  .categoryTab .categoryTab-list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    border: solid 2px #000;
+    padding: 3.38125vw 5vw;
+    margin-top: 2vw;
+    z-index: 5;
+    background-color: #fff;
+    display: none;
+  }
+  .categoryTab .is-Open .categoryTab-list {
+    display: block;
+  }
+  .categoryTab .categoryTab-item {
+    margin-top: 2vw;
+  }
+  .categoryTab .categoryTab-item .categoryTab-link {
+    font-size: 4.2vw;
+    line-height: 1.4em;
+    color: #000;
+    display: block;
+  }
+  .aboutImgLogo {
+    margin-bottom: 4.67vw;
+  }
+  .aboutImgLogo .aboutImgLogo-img {
+    width: 55.18vw;
+  }
+  .aboutBigTitle {
+    font-size: 7.29vw;
+    margin-bottom: 17.5vw;
+  }
+  .aboutBanner {
+    height: 90.33vw;
+  }
+  .aboutBanner .aboutBannerText {
+    bottom: 7.21vw;
+  }
+  .aboutBanner .aboutBannerText .aboutBannerText-title {
+    font-size: 7.47vw;
+  }
+  .aboutBanner .aboutBannerText .aboutBannerText-text {
+    font-size: 3.6vw;
+    margin-top: 2.58vw;
+  }
+  .aboutList {
+    margin-top: 13.21vw;
+  }
+  .aboutList .aboutList-list {
+    margin: 0 -1.46vw;
+  }
+  .aboutList .aboutList-list .aboutList-item {
+    padding: 0 1.46vw;
+    width: 100%;
+    float: none;
+    margin-top: 10vw;
+  }
+  .aboutList .aboutList-list .aboutList-item:first-child {
+    margin-top: 0;
+  }
+  .aboutList .aboutList-list .aboutList-item .aboutListItem-ico::after {
+    width: 11.69vw;
+    height: 9.29vw;
+    background-size: 11.69vw 9.29vw;
+  }
+  .aboutList .aboutList-list .aboutList-item .aboutListItem-ico {
+    width: 11.69vw;
+    height: 9.64vw;
+    margin-bottom: 3.86vw;
+  }
+  .aboutList .aboutList-list .aboutList-item .aboutListItem-title {
+    font-size: 5.4vw;
+  }
+  .aboutList .aboutList-list .aboutList-item .aboutListItem-text {
+    font-size: 3.72vw;
+    margin-top: 3.15vw;
   }
 }/*# sourceMappingURL=page_device.css.map */
