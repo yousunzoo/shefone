@@ -75,6 +75,59 @@
       padding: 1.09vw 0.52vw;
     }
   }
+  .newsPost {
+    margin-top: 3.39vw;
+    .newsPost-item {
+      .newsPost-noPost {
+        font-size: 1.67vw;
+        padding: 2.08vw 0;
+      }
+    }
+  }
+  .listPaging {
+    margin-top: 5.21vw;
+    .listPaging-list {
+      margin: 0 -1.04vw;
+      .listPaging-item {
+        padding: 0 1.04vw;
+        &:first-child {
+          padding-right: 3.65vw;
+          .listPrevButton-link {
+            padding-left: 2.08vw;
+            font-size: 1.04vw;
+            &::before {
+              width: 1.56vw;
+              height: 1.56vw;
+              background-size: 1.56vw 1.56vw;
+            }
+          }
+        }
+        &:last-child {
+          padding-left: 3.65vw;
+          .listNextButton-link {
+            padding-right: 2.08vw;
+            font-size: 1.04vw;
+            &::before {
+              width: 1.56vw;
+              height: 1.56vw;
+              background-size: 1.56vw 1.56vw;
+            }
+          }
+        }
+      }
+      .listPaging-text {
+        font-size: 1.04vw;
+      }
+    }
+    .listPaging-item.is-Current {
+      .listPaging-text {
+        &::after {
+          width: 1.5625vw;
+          height: 1.5625vw;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
@@ -154,6 +207,60 @@
     tbody td {
       font-size: 1.46vw;
       padding: 1.59vw 0.52vw;
+    }
+  }
+
+  .newsPost {
+    margin-top: 6.35vw;
+    .newsPost-item {
+      .newsPost-noPost {
+        font-size: 2.67vw;
+        padding: 2.55vw 0;
+      }
+    }
+  }
+  .listPaging {
+    margin-top: 9.77vw;
+    .listPaging-list {
+      margin: 0 -1.95vw;
+      .listPaging-item {
+        padding: 0 1.95vw;
+        &:first-child {
+          padding-right: 6.84vw;
+          .listPrevButton-link {
+            padding-left: 3.91vw;
+            font-size: 1.95vw;
+            &::before {
+              width: 2.93vw;
+              height: 2.93vw;
+              background-size: 2.93vw 2.93vw;
+            }
+          }
+        }
+        &:last-child {
+          padding-left: 6.84vw;
+          .listNextButton-link {
+            padding-right: 3.91vw;
+            font-size: 1.95vw;
+            &::before {
+              width: 2.93vw;
+              height: 2.93vw;
+              background-size: 2.93vw 2.93vw;
+            }
+          }
+        }
+      }
+      .listPaging-text {
+        font-size: 1.95vw;
+      }
+    }
+    .listPaging-item.is-Current {
+      .listPaging-text {
+        &::after {
+          width: 2.93vw;
+          height: 2.93vw;
+        }
+      }
     }
   }
 }
@@ -240,6 +347,60 @@
     tbody td {
       font-size: 3.57vw;
       padding: 3.59vw 1.52vw;
+    }
+  }
+
+  .newsPost {
+    margin-top: 13.83vw;
+    .newsPost-item {
+      .newsPost-noPost {
+        font-size: 5.67vw;
+        padding: 2.55vw 0;
+      }
+    }
+  }
+  .listPaging {
+    margin-top: 13.43vw;
+    .listPaging-list {
+      margin: -1.25vw -4.25vw;
+      .listPaging-item {
+        padding: 1.95vw 4.25vw;
+        &:first-child {
+          padding-right: 1.25vw;
+          .listPrevButton-link {
+            padding-left: 6.25vw;
+            font-size: 4vw;
+            &::before {
+              width: 5vw;
+              height: 5vw;
+              background-size: 5vw 5vw;
+            }
+          }
+        }
+        &:last-child {
+          padding-left: 1.25vw;
+          .listNextButton-link {
+            padding-right: 6.25vw;
+            font-size: 4vw;
+            &::before {
+              width: 5vw;
+              height: 5vw;
+              background-size: 5vw 5vw;
+            }
+          }
+        }
+        .listPaging-text {
+          font-size: 4vw;
+        }
+      }
+      .listPaging-item.is-Current {
+        .listPaging-text {
+          &::after {
+            width: 6.375vw;
+            height: 6.375vw;
+          }
+        }
+      }
     }
   }
 }
