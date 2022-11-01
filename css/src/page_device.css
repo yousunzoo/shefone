@@ -156,6 +156,58 @@
     width: 1.5625vw;
     height: 1.5625vw;
   }
+  .organization .organization-item.Depth1 {
+    padding-bottom: 3.85vw;
+  }
+  .organization .organizationDepth1-title {
+    font-size: 1.46vw;
+    width: 18.75vw;
+    padding: 1.04vw 1.04vw;
+  }
+  .organization .organization-row {
+    padding-top: 2.86vw;
+    margin-left: -2.03vw;
+    margin-right: -2.03vw;
+  }
+  .organization .organization-row .organization-item {
+    padding: 0 2.03vw;
+  }
+  .organization .organizationDepth2-title {
+    font-size: 1.25vw;
+    padding: 0.94vw 1.04vw;
+  }
+  .organization .organizationDepth2-title::before {
+    top: -2.86vw;
+    width: calc(100% + 4.17vw);
+  }
+  .organization .organizationDepth2-title::after {
+    height: 5.21vw;
+    top: -5.21vw;
+  }
+  .organization .organization-item:first-child .organizationDepth2-title::before {
+    width: calc(50% + 2.08vw);
+  }
+  .organization .organization-item:last-child .organizationDepth2-title::before {
+    width: calc(50% + 2.08vw);
+  }
+  .organization .organizationDepth2-sub {
+    margin-top: 2.5vw;
+    font-size: 1.04vw;
+  }
+  .organization .organization-list {
+    margin-top: 0.68vw;
+  }
+  .organization .organization-list .organization-text {
+    font-size: 1.04vw;
+    padding-left: 0.68vw;
+    margin-top: 0.94vw;
+  }
+  .organization .organization-list .organization-text::before {
+    top: calc(0.52vw + 2px);
+  }
+  .organization .organization-thumb {
+    margin-top: 0.99vw;
+  }
   .categoryTab {
     margin-bottom: 4.17vw;
   }
@@ -252,6 +304,9 @@
   }
   .history .historyItem .historyItemCont .historyItemCont-list .historyItemCont-item .historyItemContText .historyItemContText-text {
     font-size: 0.94vw;
+  }
+  .mediumSection {
+    max-width: 62.5vw;
   }
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
@@ -375,6 +430,62 @@
     width: 2.93vw;
     height: 2.93vw;
   }
+  .organization .organization-item.Depth1 {
+    padding-bottom: 5.85vw;
+  }
+  .organization .organizationDepth1-title {
+    font-size: 2.15vw;
+    width: 29.75vw;
+    padding: 1.44vw 1.04vw;
+  }
+  .organization .organizationDepth1-title::after {
+    height: 7.21vw;
+    bottom: -7.21vw;
+  }
+  .organization .organization-row {
+    padding-top: 4.87vw;
+    margin-left: -2.03vw;
+    margin-right: -2.03vw;
+  }
+  .organization .organization-row .organization-item {
+    padding: 0 2.03vw;
+  }
+  .organization .organizationDepth2-title {
+    font-size: 1.93vw;
+    padding: 1.29vw 1.04vw;
+  }
+  .organization .organizationDepth2-title::before {
+    top: -4.86vw;
+    width: calc(100% + 4.17w);
+  }
+  .organization .organizationDepth2-title::after {
+    height: 5.21vw;
+    top: -5.21vw;
+  }
+  .organization .organization-item:first-child .organizationDepth2-title::before {
+    width: calc(50% + 2.08vw);
+  }
+  .organization .organization-item:last-child .organizationDepth2-title::before {
+    width: calc(50% + 2.08vw);
+  }
+  .organization .organizationDepth2-sub {
+    margin-top: 2.8vw;
+    font-size: 1.84vw;
+  }
+  .organization .organization-list {
+    margin-top: 1.27vw;
+  }
+  .organization .organization-list .organization-text {
+    font-size: 1.52vw;
+    padding-left: 0.98vw;
+    margin-top: 1.29vw;
+  }
+  .organization .organization-list .organization-text::before {
+    top: calc(0.52vw + 2px);
+  }
+  .organization .organization-thumb {
+    margin-top: 1.5vw;
+  }
   .categoryTab {
     margin-bottom: 6.17vw;
   }
@@ -471,6 +582,9 @@
   }
   .history .historyItem .historyItemCont .historyItemCont-list .historyItemCont-item .historyItemContText .historyItemContText-text {
     font-size: 1.39vw;
+  }
+  .mediumSection {
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 767px) and (min-width: 1px) {
@@ -600,6 +714,57 @@
   .listPaging .listPaging-list .listPaging-item.is-Current .listPaging-text::after {
     width: 6.375vw;
     height: 6.375vw;
+  }
+  .organization .organization-item.Depth1 {
+    padding-bottom: 8.85vw;
+  }
+  .organization .organizationDepth1-title {
+    font-size: 5.15vw;
+    width: 100%;
+    padding: 4.28vw 1.04vw;
+  }
+  .organization .organizationDepth1-title::after {
+    height: 9.21vw;
+    bottom: -9.21vw;
+  }
+  .organization .organization-row {
+    padding-top: 0;
+    margin-left: -2.03vw;
+    margin-right: -2.03vw;
+  }
+  .organization .organization-row .organization-item {
+    padding: 0 2.03vw;
+    width: 100%;
+    margin-top: 12vw;
+  }
+  .organization .organization-row .organization-item:first-child {
+    margin-top: 0;
+  }
+  .organization .organizationDepth2-title {
+    font-size: 4.45vw;
+    padding: 2.84vw 1.04vw;
+  }
+  .organization .organizationDepth2-title::before, .organization .organizationDepth2-title::after {
+    display: none;
+  }
+  .organization .organizationDepth2-sub {
+    margin-top: 5.8vw;
+    font-size: 4.79vw;
+  }
+  .organization .organization-list {
+    margin-top: 2.27vw;
+  }
+  .organization .organization-list .organization-text {
+    font-size: 3.72vw;
+    padding-left: 2.4vw;
+    margin-top: 1.29vw;
+  }
+  .organization .organization-list .organization-text::before {
+    top: calc(1.22vw + 2px);
+  }
+  .organization .organization-thumb {
+    margin-top: 4vw;
+    width: 100%;
   }
   .categoryTab {
     margin-bottom: 11.17vw;
@@ -736,5 +901,8 @@
   }
   .history .historyItem .historyItemCont .historyItemCont-list .historyItemCont-item .historyItemContText .historyItemContText-text {
     font-size: 3.69vw;
+  }
+  .mediumSection {
+    max-width: 100%;
   }
 }/*# sourceMappingURL=page_device.css.map */

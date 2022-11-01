@@ -662,6 +662,7 @@
       left: 50%;
     }
   }
+
   .organization-item:first-child .organizationDepth2-title::before {
     width: calc(50% + 40px);
     transform: translateX(0%);
@@ -672,6 +673,7 @@
     right: 50%;
     transform: translateX(0%);
   }
+
   .organizationDepth2-sub {
     margin-top: 48px;
     font-size: 20px;
@@ -748,6 +750,7 @@
   }
 }
 
+// 메뉴제안 & 시연회
 .mediumSection {
   max-width: 1200px;
   margin: 0 auto;

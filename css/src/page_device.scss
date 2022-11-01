@@ -168,6 +168,64 @@
     }
   }
 
+  // 표
+  .organization {
+    .organization-item.Depth1 {
+      padding-bottom: 3.85vw;
+    }
+    .organizationDepth1-title {
+      font-size: 1.46vw;
+      width: 18.75vw;
+      padding: 1.04vw 1.04vw;
+    }
+
+    .organization-row {
+      padding-top: 2.86vw;
+      margin-left: -2.03vw;
+      margin-right: -2.03vw;
+      .organization-item {
+        padding: 0 2.03vw;
+      }
+    }
+    .organizationDepth2-title {
+      font-size: 1.25vw;
+      padding: 0.94vw 1.04vw;
+      &::before {
+        top: -2.86vw;
+        width: calc(100% + 4.17vw);
+      }
+      &::after {
+        height: 5.21vw;
+        top: -5.21vw;
+      }
+    }
+
+    .organization-item:first-child .organizationDepth2-title::before {
+      width: calc(50% + 2.08vw);
+    }
+    .organization-item:last-child .organizationDepth2-title::before {
+      width: calc(50% + 2.08vw);
+    }
+    .organizationDepth2-sub {
+      margin-top: 2.5vw;
+      font-size: 1.04vw;
+    }
+    .organization-list {
+      margin-top: 0.68vw;
+      .organization-text {
+        font-size: 1.04vw;
+        padding-left: 0.68vw;
+        margin-top: 0.94vw;
+        &::before {
+          top: calc(0.52vw + 2px);
+        }
+      }
+    }
+    .organization-thumb {
+      margin-top: 0.99vw;
+    }
+  }
+
   // 회사 소개 페이지
   .categoryTab {
     margin-bottom: 4.17vw;
@@ -226,6 +284,7 @@
       }
     }
   }
+
   // 회사 역사 페이지
   .pageFrontTitle {
     margin-bottom: 7.81vw;
@@ -269,6 +328,11 @@
         }
       }
     }
+  }
+
+  // 메뉴제안 & 시연회
+  .mediumSection {
+    max-width: 62.5vw;
   }
 }
 
@@ -405,6 +469,68 @@
       }
     }
   }
+  // 표
+  .organization {
+    .organization-item.Depth1 {
+      padding-bottom: 5.85vw;
+    }
+    .organizationDepth1-title {
+      font-size: 2.15vw;
+      width: 29.75vw;
+      padding: 1.44vw 1.04vw;
+      &::after {
+        height: 7.21vw;
+        bottom: -7.21vw;
+      }
+    }
+    .organization-row {
+      padding-top: 4.87vw;
+      margin-left: -2.03vw;
+      margin-right: -2.03vw;
+      .organization-item {
+        padding: 0 2.03vw;
+      }
+    }
+    .organizationDepth2-title {
+      font-size: 1.93vw;
+      padding: 1.29vw 1.04vw;
+      &::before {
+        top: -4.86vw;
+        width: calc(100% + 4.17w);
+      }
+      &::after {
+        height: 5.21vw;
+        top: -5.21vw;
+      }
+    }
+
+    .organization-item:first-child .organizationDepth2-title::before {
+      width: calc(50% + 2.08vw);
+    }
+    .organization-item:last-child .organizationDepth2-title::before {
+      width: calc(50% + 2.08vw);
+    }
+
+    .organizationDepth2-sub {
+      margin-top: 2.8vw;
+      font-size: 1.84vw;
+    }
+    .organization-list {
+      margin-top: 1.27vw;
+      .organization-text {
+        font-size: 1.52vw;
+        padding-left: 0.98vw;
+        margin-top: 1.29vw;
+        &::before {
+          top: calc(0.52vw + 2px);
+        }
+      }
+    }
+    .organization-thumb {
+      margin-top: 1.5vw;
+    }
+  }
+
   // 회사 소개 페이지
   .categoryTab {
     margin-bottom: 6.17vw;
@@ -505,6 +631,10 @@
         }
       }
     }
+  }
+  // 메뉴제안 & 시연회
+  .mediumSection {
+    max-width: 100%;
   }
 }
 
@@ -647,6 +777,63 @@
       }
     }
   }
+  // 표
+  .organization {
+    .organization-item.Depth1 {
+      padding-bottom: 8.85vw;
+    }
+    .organizationDepth1-title {
+      font-size: 5.15vw;
+      width: 100%;
+      padding: 4.28vw 1.04vw;
+      &::after {
+        height: 9.21vw;
+        bottom: -9.21vw;
+      }
+    }
+    .organization-row {
+      padding-top: 0;
+      margin-left: -2.03vw;
+      margin-right: -2.03vw;
+      .organization-item {
+        padding: 0 2.03vw;
+        width: 100%;
+        margin-top: 12vw;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+    .organizationDepth2-title {
+      font-size: 4.45vw;
+      padding: 2.84vw 1.04vw;
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    .organizationDepth2-sub {
+      margin-top: 5.8vw;
+      font-size: 4.79vw;
+    }
+    .organization-list {
+      margin-top: 2.27vw;
+      .organization-text {
+        font-size: 3.72vw;
+        padding-left: 2.4vw;
+        margin-top: 1.29vw;
+        &::before {
+          top: calc(1.22vw + 2px);
+        }
+      }
+    }
+    .organization-thumb {
+      margin-top: 4vw;
+      width: 100%;
+    }
+  }
+
   // 회사 소개 페이지
   .categoryTab {
     margin-bottom: 11.17vw;
@@ -787,5 +974,9 @@
         }
       }
     }
+  }
+  // 메뉴제안 & 시연회
+  .mediumSection {
+    max-width: 100%;
   }
 }
