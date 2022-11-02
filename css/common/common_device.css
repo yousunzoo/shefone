@@ -185,9 +185,6 @@
     width: 26.04vw;
     padding: 0 1.04vw;
   }
-  .mainSlide .mainServiceSlideSec .mainServiceSlide .mainServiceSlide-wrapper .mainServiceSlide-item:first-child {
-    margin-right: 29.69vw;
-  }
   .mainSlide .mainServiceSlideSec .mainServiceSlide .mainServiceSlide-wrapper .mainServiceSlide-item .mainServiceSlideItem .mainServiceSlideItemThumb {
     width: 26.04vw;
   }
@@ -430,9 +427,6 @@
   .mainSlide .mainServiceSlideSec .mainServiceSlide .mainServiceSlide-wrapper .mainServiceSlide-item {
     width: 34.72vw;
     padding: 0 1.39vw;
-  }
-  .mainSlide .mainServiceSlideSec .mainServiceSlide .mainServiceSlide-wrapper .mainServiceSlide-item:first-child {
-    margin-right: 39.58vw;
   }
   .mainSlide .mainServiceSlideSec .mainServiceSlide .mainServiceSlide-wrapper .mainServiceSlide-item .mainServiceSlideItem .mainServiceSlideItemThumb {
     width: 34.72vw;

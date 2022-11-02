@@ -62,7 +62,6 @@
     )
       return;
     if (mainProduct.offset().top < viewportHeight + sc) {
-      console.log("hello");
       let aClip = mainProductCont.find(".a-Clip");
       let AnimeBtn = mainProductCont.find(".AnimeBtn");
       aClip.addClass("is-Clip");
@@ -83,6 +82,54 @@
       let aClip = mainInquiry.find(".a-Clip");
       mainInquiry.addClass("is-View");
       aClip.addClass("is-Clip");
+    }
+  }
+
+  // slide event 구현
+  let swiperBtnN = $(".swiper-btn-next");
+  let swiperBtnP = $(".swiper-btn-prev");
+  let mainSlideWrapper = $(".mainServiceSlide-wrapper");
+  let mainServiceSlideItem = $(".mainServiceSlide-item");
+  let ItemW = mainServiceSlideItem.innerWidth();
+  let i = 0;
+
+  let slideActive = mainSlideWrapper.find(".swiper-slide-active");
+
+  console.log(ItemW);
+  mainServiceSlideItem.css({ width: ItemW + 20 + "px" });
+
+  swiperBtnN.on("click", swiperNextFn);
+  swiperBtnP.on("click", swiperPrevFn);
+  function swiperNextFn() {
+    if (i < 3) {
+      i++;
+      if (i == 3) {
+        swiperBtnN.addClass("swiper-btn-disabled");
+      }
+      swiperBtnP.removeClass("swiper-btn-disabled");
+      console.log(i);
+      slideActive.removeClass("swiper-slide-active");
+      slideActive.next().addClass("swiper-slide-active");
+      slideActive = mainSlideWrapper.find(".swiper-slide-active");
+      mainSlideWrapper.css({
+        transform: "translateX(-" + ItemW * i + "px)",
+      });
+    }
+  }
+  function swiperPrevFn() {
+    if (i > 0) {
+      i--;
+      if (i == 0) {
+        swiperBtnP.addClass("swiper-btn-disabled");
+      }
+      swiperBtnN.removeClass("swiper-btn-disabled");
+      console.log(i);
+      slideActive.removeClass("swiper-slide-active");
+      slideActive.prev().addClass("swiper-slide-active");
+      slideActive = mainSlideWrapper.find(".swiper-slide-active");
+      mainSlideWrapper.css({
+        transform: "translateX(-" + ItemW * i + "px)",
+      });
     }
   }
 })(jQuery);

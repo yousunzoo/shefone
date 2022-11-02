@@ -307,7 +307,7 @@
     margin-bottom: 80px !important;
   }
 
-  .mb150 {
+  .mb140 {
     margin-bottom: 140px !important;
   }
   .mb150 {
@@ -402,24 +402,30 @@
     .mainServiceSlideSec {
       .mainServiceSlide {
         margin: 0 -2.2vw;
-        .mainServiceSlide-wrapper {
+        .mainServiceSlide-container {
           margin-left: auto;
           margin-right: auto;
           position: relative;
-          overflow: hidden;
+          overflow: visible;
           z-index: 1;
-          width: 400%;
+          width: 100%;
           height: 100%;
+        }
+        .mainServiceSlide-wrapper {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
           display: flex;
+          transition: transform 0.7s;
+          box-sizing: content-box;
+          transform: translateX(0);
           .mainServiceSlide-item {
             padding: 0 20px;
             width: 500px;
             display: block !important;
             transition-property: margin-right;
             transition-duration: 0.7s;
-            &:first-child {
-              margin-right: 570px;
-            }
             .mainServiceSlideItem {
               position: relative;
               &::after {
@@ -450,6 +456,21 @@
                   margin-bottom: 105px;
                   overflow: hidden;
                 }
+
+                .mainServiceSlideItemCont-clip {
+                  display: block;
+                  transition-property: transform;
+                  transition-duration: 0.5s;
+                  transition-delay: 0.5s;
+                  transform: translateY(104%);
+                }
+                .MainServiceSlideItemCont-clip {
+                  display: block;
+                  transition-property: transform;
+                  transition-duration: 0.5s;
+                  transition-delay: 0.5s;
+                  transform: translateY(104%);
+                }
                 .mainServiceSlideItemMeta {
                   .MainServiceSlideItemMeta-count {
                     font-size: 30px;
@@ -477,6 +498,18 @@
           }
           .mainServiceSlide-item.swiper-slide-active {
             margin-right: 570px;
+            .mainServiceSlideItemCont {
+              .mainServiceSlideItemCont-clip {
+                transform: translateY(0);
+                transition-duration: 0.5s;
+                transition-delay: 0.5s;
+              }
+              .MainServiceSlideItemCont-clip {
+                transform: translateY(0);
+                transition-duration: 0.5s;
+                transition-delay: 0.5s;
+              }
+            }
           }
         }
       }
