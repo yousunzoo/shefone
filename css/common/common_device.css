@@ -139,7 +139,7 @@
     width: calc(11.77vw + 4px);
   }
   .mainTitleHead-title {
-    font-size: 4.17px;
+    font-size: 4.17vw;
   }
   .mainTitleHead-text {
     padding-left: 7.81vw;
@@ -219,25 +219,23 @@
     height: 18.75vw;
   }
   .mainInquiry .mainInquiry-container .mainInquiry-link {
-    padding: 8.8vw 0;
+    padding: 2.4vw 0;
   }
   .mainInquiry .mainInquiry-container .mainInquiry-link .mainInquiry-inner::after {
-    width: 9.23vw;
-    height: 2.91vw;
-    background-size: 9.23vw 2.91vw;
-    bottom: auto;
-    top: 0;
+    width: 3.13vw;
+    height: 0.94vw;
+    background-size: 3.13vw 0.94vw;
   }
   .mainInquiry .mainInquiry-container .mainInquiry-link .mainInquiry-inner .mainInquiry-cate {
-    font-size: 4.04vw;
-    margin-bottom: 4.42vw;
+    font-size: 1.04vw;
+    margin-bottom: 1.82vw;
   }
   .mainInquiry .mainInquiry-container .mainInquiry-link .mainInquiry-inner .mainInquiry-title {
-    font-size: 7.08vw;
+    font-size: 2.08vw;
   }
   .mainInquiry .mainInquiry-container .mainInquiry-link .mainInquiry-inner .mainInquiry-text {
-    margin-top: 2.94vw;
-    font-size: 3.8vw;
+    margin-top: 1.41vw;
+    font-size: 1.25vw;
   }
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
@@ -379,7 +377,7 @@
   .mainHeader-img {
     width: 58vw;
   }
-  .mainSecRow-text {
+  .mainSecRow-cell .mainSecRow-text {
     margin-top: 5.65vw;
     font-size: 2.42vw;
   }
@@ -391,7 +389,7 @@
     padding: calc(2.39vw + 2px) calc(3.92vw + 2px);
   }
   .mainTitleHead-title {
-    font-size: 5.67px;
+    font-size: 5.67vw;
   }
   .mainTitleHead-text {
     padding-left: 5.81vw;
@@ -540,6 +538,12 @@
     height: 1.86vw;
     background-size: 1.86vw 1.86vw;
   }
+  #header .header_container .header_info .siteFamily .siteFamilySelect {
+    margin-top: 4.1vw;
+    padding: 3.38vw 3.09vw;
+    left: auto;
+    width: 28vw;
+  }
   #header .header_container .header_info .siteFamily .siteFamilySelect .siteFamilySelect-item {
     margin-top: 1.56vw;
   }
@@ -563,13 +567,13 @@
   #siteHeaderMenu .siteHeaderMenu-scroll .header_container .menu-wrapper > .menu_item a {
     font-size: 6.19vw;
   }
-  #siteHeaderMenu .siteHeaderMenu-scroll .header_container .submenu {
+  #siteHeaderMenu .siteHeaderMenu-scroll .header_container .menu-wrapper > .menu_item .submenu {
     left: 50%;
   }
-  #siteHeaderMenu .siteHeaderMenu-scroll .header_container .submenu .submenu_item {
+  #siteHeaderMenu .siteHeaderMenu-scroll .header_container .menu-wrapper > .menu_item .submenu .submenu_item {
     margin-top: 1.85vw;
   }
-  #siteHeaderMenu .siteHeaderMenu-scroll .header_container .submenu a {
+  #siteHeaderMenu .siteHeaderMenu-scroll .header_container .menu-wrapper > .menu_item .submenu a {
     font-size: 4.48vw;
   }
   #footer .footer-container {
@@ -632,7 +636,7 @@
     display: block !important;
     width: 100% !important;
   }
-  .mainSecRow-text {
+  .mainSecRow-cell .mainSecRow-text {
     margin-top: 8.65vw;
     font-size: 3.84vw;
   }

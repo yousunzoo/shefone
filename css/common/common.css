@@ -129,6 +129,31 @@
     display: table;
     width: 100%;
   }
+  .mainSecRow .mainHeader-Clip {
+    display: block;
+    overflow: hidden;
+  }
+  .mainSecRow .mainHeader-Clip .mainHeader-ClipText {
+    line-height: 0;
+    display: block;
+    -webkit-animation: MainHeaderClip 0.8s forwards;
+            animation: MainHeaderClip 0.8s forwards;
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+    transform: translateY(102%);
+  }
+  .mainSecRow .mainSecRow-text {
+    margin-top: 48px;
+    font-size: 24px;
+    line-height: 1.6em;
+    color: #000000;
+    font-weight: 500;
+    -webkit-animation: MainHeaderText 0.8s forwards;
+            animation: MainHeaderText 0.8s forwards;
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+    opacity: 0;
+  }
   .mainSecRow-cell:first-child {
     display: table-cell;
     vertical-align: top;
@@ -285,17 +310,6 @@
     bottom: 0;
     line-height: 0;
   }
-  .mainBanner .mainBannerBg .mainBannerSectionBg-img {
-    display: block;
-    position: absolute;
-    top: -35%;
-    left: 0;
-    right: 0;
-    height: 135%;
-    background-image: url("../../sources/main/main_banner_bg-min.png");
-    background-size: cover;
-    background-position: center center;
-  }
   .mainBanner .mainBannerText {
     position: absolute;
     top: 50%;
@@ -311,6 +325,17 @@
     color: #fff;
     text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
     font-weight: bold;
+  }
+  .mainBannerSectionBg-img {
+    display: block;
+    position: absolute;
+    top: -35%;
+    left: 0;
+    right: 0;
+    height: 135%;
+    background-image: url("../../sources/main/main_banner_bg-min.png");
+    background-size: cover;
+    background-position: center center;
   }
   .mainSlide .mainSlideTitle {
     margin-bottom: 50px;
@@ -350,6 +375,10 @@
     display: block;
     float: left;
     cursor: pointer;
+  }
+  .mainSlide .mainSlideTitle .mainTitleHeadMeta .swiper-btn-disabled {
+    opacity: 0.15;
+    pointer-events: none;
   }
   .mainSlide .mainServiceSlideSec .mainServiceSlide {
     margin: 0 -2.2vw;
@@ -532,6 +561,7 @@
   transform: translateY(-50%);
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 #header .header_container .header_info .menuBtn .menuBtn-menu {
   width: 35px;
@@ -542,6 +572,7 @@
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+  transition: all 0.3s;
 }
 #header .header_container .header_info .menuBtn .menuBtn-menu::after {
   content: "Menu";
@@ -566,6 +597,7 @@
   transform: translateY(-50%) scale(0);
   opacity: 0;
   visibility: hidden;
+  transition: all 0.3s 0.2s;
 }
 #header .header_container .header_info .siteFamily {
   position: absolute;
@@ -639,6 +671,15 @@
   font-weight: 500;
 }
 
+#header.is-Up {
+  transform: translateY(-100%);
+}
+
+#header.is-Down {
+  transform: translateY(0%);
+  background-color: #fff;
+}
+
 #siteHeaderMenu {
   position: fixed;
   top: 0;
@@ -649,6 +690,7 @@
   background-color: #fff;
   opacity: 0;
   visibility: hidden;
+  transition: all 0.4s;
 }
 #siteHeaderMenu .header_container::after {
   content: "";
@@ -679,12 +721,15 @@
 #siteHeaderMenu .siteHeaderMenu-scroll .menu-wrapper > .menu_item:first-child {
   margin-top: 0;
 }
-#siteHeaderMenu .siteHeaderMenu-scroll .menu-wrapper > .menu_item a {
+#siteHeaderMenu .siteHeaderMenu-scroll .menu-wrapper > .menu_item > a {
   display: inline-block;
   font-size: 55px;
   line-height: 1.1em;
   font-weight: bold;
   max-width: 50%;
+}
+#siteHeaderMenu .siteHeaderMenu-scroll .menu-wrapper > .menu_item > a:hover {
+  color: #a60235;
 }
 #siteHeaderMenu .siteHeaderMenu-scroll .menu-wrapper > .menu_item .submenu {
   position: absolute;
@@ -702,17 +747,33 @@
   margin-top: 0;
 }
 #siteHeaderMenu .siteHeaderMenu-scroll .menu-wrapper > .menu_item .submenu .submenu_item a {
-  display: flex;
+  display: inline-block;
   width: 100%;
   font-size: 40px;
   line-height: 1.4em;
   font-weight: bold;
+}
+#siteHeaderMenu .siteHeaderMenu-scroll .menu-wrapper > .menu_item .submenu .submenu_item a:hover {
+  color: red;
+}
+#siteHeaderMenu .siteHeaderMenu-scroll .menu-wrapper > .menu_item.is-Subview .submenu {
+  opacity: 1;
+  visibility: visible;
+}
+
+#siteContent {
+  opacity: 1;
+  display: block;
+  transition: all 0.3s;
 }
 
 #footer {
   margin-top: 150px;
   position: relative;
   flex-shrink: 0;
+  opacity: 1;
+  display: block;
+  transition: all 0.3s;
 }
 #footer .footer-container {
   max-width: 1760px;
@@ -806,4 +867,27 @@
   font-size: 14px;
   line-height: 1.5em;
   color: #555555;
+}
+
+.is-NavOpen #header .header_container .header_info .menuBtn .menuBtn-menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-50%) scale(0);
+}
+.is-NavOpen #header .header_container .header_info .menuBtn .menuBtn-close {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) scale(1);
+}
+.is-NavOpen #siteHeaderMenu {
+  opacity: 1;
+  visibility: visible;
+}
+.is-NavOpen #siteContent {
+  opacity: 0;
+  display: none;
+}
+.is-NavOpen #footer {
+  opacity: 0;
+  display: none;
 }/*# sourceMappingURL=common.css.map */

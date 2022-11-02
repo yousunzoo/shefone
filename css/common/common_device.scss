@@ -157,7 +157,7 @@
     width: calc(11.77vw + 4px);
   }
   .mainTitleHead-title {
-    font-size: 4.17px;
+    font-size: 4.17vw;
   }
   .mainTitleHead-text {
     padding-left: 7.81vw;
@@ -253,25 +253,23 @@
   .mainInquiry {
     .mainInquiry-container {
       .mainInquiry-link {
-        padding: 8.8vw 0;
+        padding: 2.4vw 0;
         .mainInquiry-inner {
           &::after {
-            width: 9.23vw;
-            height: 2.91vw;
-            background-size: 9.23vw 2.91vw;
-            bottom: auto;
-            top: 0;
+            width: 3.13vw;
+            height: 0.94vw;
+            background-size: 3.13vw 0.94vw;
           }
           .mainInquiry-cate {
-            font-size: 4.04vw;
-            margin-bottom: 4.42vw;
+            font-size: 1.04vw;
+            margin-bottom: 1.82vw;
           }
           .mainInquiry-title {
-            font-size: 7.08vw;
+            font-size: 2.08vw;
           }
           .mainInquiry-text {
-            margin-top: 2.94vw;
-            font-size: 3.8vw;
+            margin-top: 1.41vw;
+            font-size: 1.25vw;
           }
         }
       }
@@ -430,9 +428,11 @@
     width: 58vw;
   }
 
-  .mainSecRow-text {
-    margin-top: 5.65vw;
-    font-size: 2.42vw;
+  .mainSecRow-cell {
+    .mainSecRow-text {
+      margin-top: 5.65vw;
+      font-size: 2.42vw;
+    }
   }
   .mainHeader-btn {
     width: calc(22.27vw + 4px);
@@ -442,7 +442,7 @@
     padding: calc(2.39vw + 2px) calc(3.92vw + 2px);
   }
   .mainTitleHead-title {
-    font-size: 5.67px;
+    font-size: 5.67vw;
   }
   .mainTitleHead-text {
     padding-left: 5.81vw;
@@ -613,6 +613,10 @@
             }
           }
           .siteFamilySelect {
+            margin-top: 4.1vw;
+            padding: 3.38vw 3.09vw;
+            left: auto;
+            width: 28vw;
             .siteFamilySelect-item {
               margin-top: 1.56vw;
               .siteFamilySelect-link {
@@ -641,14 +645,15 @@
           a {
             font-size: 6.19vw;
           }
-        }
-        .submenu {
-          left: 50%;
-          .submenu_item {
-            margin-top: 1.85vw;
-          }
-          a {
-            font-size: 4.48vw;
+
+          .submenu {
+            left: 50%;
+            .submenu_item {
+              margin-top: 1.85vw;
+            }
+            a {
+              font-size: 4.48vw;
+            }
           }
         }
       }
@@ -718,10 +723,11 @@
   .mainSecRow-cell {
     display: block !important;
     width: 100% !important;
-  }
-  .mainSecRow-text {
-    margin-top: 8.65vw;
-    font-size: 3.84vw;
+
+    .mainSecRow-text {
+      margin-top: 8.65vw;
+      font-size: 3.84vw;
+    }
   }
   .mainHeader-btn {
     width: 100%;

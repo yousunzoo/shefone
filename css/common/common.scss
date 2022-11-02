@@ -1,4 +1,5 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
 @-webkit-keyframes SiteFamilyArrow {
   0% {
     width: 0;
@@ -139,6 +140,27 @@
   .mainSecRow {
     display: table;
     width: 100%;
+    .mainHeader-Clip {
+      display: block;
+      overflow: hidden;
+      .mainHeader-ClipText {
+        line-height: 0;
+        display: block;
+        animation: MainHeaderClip 0.8s forwards;
+        animation-delay: 0.2s;
+        transform: translateY(102%);
+      }
+    }
+    .mainSecRow-text {
+      margin-top: 48px;
+      font-size: 24px;
+      line-height: 1.6em;
+      color: #000000;
+      font-weight: 500;
+      animation: MainHeaderText 0.8s forwards;
+      animation-delay: 0.2s;
+      opacity: 0;
+    }
   }
   .mainSecRow-cell:first-child {
     display: table-cell;
@@ -303,17 +325,6 @@
       right: 0;
       bottom: 0;
       line-height: 0;
-      .mainBannerSectionBg-img {
-        display: block;
-        position: absolute;
-        top: -35%;
-        left: 0;
-        right: 0;
-        height: 135%;
-        background-image: url("../../sources/main/main_banner_bg-min.png");
-        background-size: cover;
-        background-position: center center;
-      }
     }
     .mainBannerText {
       position: absolute;
@@ -331,6 +342,18 @@
         font-weight: bold;
       }
     }
+  }
+
+  .mainBannerSectionBg-img {
+    display: block;
+    position: absolute;
+    top: -35%;
+    left: 0;
+    right: 0;
+    height: 135%;
+    background-image: url("../../sources/main/main_banner_bg-min.png");
+    background-size: cover;
+    background-position: center center;
   }
   .mainSlide {
     .mainSlideTitle {
@@ -369,6 +392,10 @@
           display: block;
           float: left;
           cursor: pointer;
+        }
+        .swiper-btn-disabled {
+          opacity: 0.15;
+          pointer-events: none;
         }
       }
     }
@@ -563,6 +590,7 @@
         transform: translateY(-50%);
         width: 40px;
         height: 40px;
+        cursor: pointer;
         .menuBtn-menu {
           width: 35px;
           height: 11px;
@@ -572,6 +600,7 @@
           top: 50%;
           left: 0;
           transform: translateY(-50%);
+          transition: all 0.3s;
           &::after {
             content: "Menu";
             color: #000;
@@ -596,6 +625,7 @@
           transform: translateY(-50%) scale(0);
           opacity: 0;
           visibility: hidden;
+          transition: all 0.3s 0.2s;
         }
       }
       .siteFamily {
@@ -670,6 +700,13 @@
     }
   }
 }
+#header.is-Up {
+  transform: translateY(-100%);
+}
+#header.is-Down {
+  transform: translateY(0%);
+  background-color: #fff;
+}
 
 #siteHeaderMenu {
   position: fixed;
@@ -681,6 +718,7 @@
   background-color: #fff;
   opacity: 0;
   visibility: hidden;
+  transition: all 0.4s;
   .header_container::after {
     content: "";
     display: table;
@@ -708,12 +746,15 @@
       }
       margin-top: 45px;
       position: relative;
-      a {
+      > a {
         display: inline-block;
         font-size: 55px;
         line-height: 1.1em;
         font-weight: bold;
         max-width: 50%;
+        &:hover {
+          color: #a60235;
+        }
       }
       .submenu {
         position: absolute;
@@ -729,22 +770,39 @@
           }
           margin-top: 10px;
           a {
-            display: flex;
+            display: inline-block;
             width: 100%;
             font-size: 40px;
             line-height: 1.4em;
             font-weight: bold;
+            &:hover {
+              color: red;
+            }
           }
         }
       }
     }
+    .menu-wrapper > .menu_item.is-Subview {
+      .submenu {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
   }
+}
+#siteContent {
+  opacity: 1;
+  display: block;
+  transition: all 0.3s;
 }
 
 #footer {
   margin-top: 150px;
   position: relative;
   flex-shrink: 0;
+  opacity: 1;
+  display: block;
+  transition: all 0.3s;
   .footer-container {
     &::after {
       content: "";
@@ -837,5 +895,38 @@
         color: #555555;
       }
     }
+  }
+}
+
+.is-NavOpen {
+  #header {
+    .header_container {
+      .header_info {
+        .menuBtn {
+          .menuBtn-menu {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-50%) scale(0);
+          }
+          .menuBtn-close {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%) scale(1);
+          }
+        }
+      }
+    }
+  }
+  #siteHeaderMenu {
+    opacity: 1;
+    visibility: visible;
+  }
+  #siteContent {
+    opacity: 0;
+    display: none;
+  }
+  #footer {
+    opacity: 0;
+    display: none;
   }
 }
